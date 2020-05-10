@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button class="forward">前进</button>
+  <button class="back">后退</button>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script>
+    let arr = ['a', 'b', 'c', 'd', 'e'];
+    // shift() 获取数组的第一个元素
+    // unshift() 把元素添加到数组的前面
+    // push() 把某个元素添加到数组的最后
+    // pop() 获取数组的最后一个元素
+
+    // 点击forward的的时候 把数组的第一个元素添加到数组的后面 不保留第一个元素
+    $('.forward').click(function () {
+      // console.log(arr);
+      // 获取数组的第一个元素
+      let ele = arr.shift()
+      // console.log(ele);
+      // 把这个元素添加到数组的后面
+      arr.push(ele);
+      console.log(arr);        
+
+          // sdasd
+    })
+
+    // 点击back的时候 把数组的最后一个元素添加到数组的前面 不保留最后一个元素
+    $('.back').click(function () {
+      // 获取数组的最后一个元素
+      let ele = arr.pop();
+      // console.log(ele);
+      // 把这个元素添加到数组的前面
+      arr.unshift(ele);
+      console.log(arr);
+    })
+
+  </script>
+</body>
+
+</html>

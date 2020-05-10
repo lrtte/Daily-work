@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 300px;
+      height: 300px;
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- html代码 -->
+  <button class="showbtn">下拉</button>
+  <button class="hidebtn">卷曲</button>
+  <button class="togglebtn">下拉/卷曲</button>
+  <div></div>
+  <!-- JavaScript代码 -->
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script>
+    // slideDown([speed],[easing],[fn])
+    $('.showbtn').on('click', function () {
+      // 让div经过1秒完全下拉出来，当完全下拉出来之后 弹出一句话，完全下拉
+      $('div').slideDown(1000, function () {
+        alert("下拉下来")
+      })
+    })
+
+    // slideUp([speed,[easing],[fn]])
+    $('.hidebtn').on('click', function () {
+      // 让div经过3秒完全隐藏起来，当完全隐藏起来之后 弹出一句话，完全隐藏起来了
+      $('div').slideUp(1000, function () {
+        alert("卷曲上去")
+      })
+    })
+
+
+    // slideToggle([speed],[easing],[fn])
+    $('.togglebtn').on('click', function () {
+      // 让div经过3秒完全隐藏起来，当完全隐藏起来之后 弹出一句话，完全隐藏起来了
+      $('div').slideToggle(1000, function () {
+        alert("切换")
+      })
+    })
+
+
+    $('.showbtn').on('click',function(){
+      $('div').slideDown(1000,function(){
+        alert('下拉')
+      })
+    })
+    $('hidebtn').on('click',function(){
+      $('div').slideUp(1000,function(){
+        alert('卷曲上去')
+      })
+    })
+    $('.togglebtn').on('click',function(){
+      $('div').slideToggle(1000,function(){
+        alert('切换')
+      })
+    })
+  </script>
+</body>
+
+</html>

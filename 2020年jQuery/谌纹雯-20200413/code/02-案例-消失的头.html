@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    div {
+      width: 400px;
+    }
+
+    img {
+      width: 90px;
+      height: 90px;
+      vertical-align: top;
+    }
+  </style>
+
+</head>
+
+<body>
+  <input type="button" value="隐藏动画" id="btn1" />
+  <input type="button" value="显示动画" id="btn2" />
+  <div>
+    <img src="image/1.jpg" />
+    <img src="image/2.jpg" />
+    <img src="image/3.jpg" />
+    <img src="image/4.jpg" />
+  </div>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script>
+    // 点击第一个按钮让图片隐藏
+    // 1.点击第一个按钮
+    //消失的头
+    $('#btn1').on('click', function () {
+      // 1.1 找到div中的最后一个img 它的前面一个兄弟元素也隐藏掉
+      $('div img:last-child').hide(300, function f1() {
+        $(this).prev().hide(300, f1)
+      })
+    })
+    // 2.点击第二个按钮 让每个头慢慢出来
+    $('#btn2').on('click', function () {
+      // 1.1 找到div中的最后一个img 它的前面一个兄弟元素也隐藏掉
+      $('div img:first-child').show(300, function f1() {
+        $(this).next().show(300, f1)
+      })
+    })
+    
+    $('#but1').on('click',function(){
+      $('div img:last-child').hide(300,function f1(){
+        
+      })
+    })
+
+
+  </script>
+</body>
+
+</html>
