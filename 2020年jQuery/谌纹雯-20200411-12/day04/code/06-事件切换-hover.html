@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div></div>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script>
+    // 当我鼠标移入 让div的背景颜色变成green 鼠标移出 变成黄色
+    // hover(overfn,outfn)
+
+    $('div').hover(function () {
+      $(this).css('backgroundColor', 'green');
+    }, function () {
+      $(this).css('backgroundColor', 'yellow');
+    })
+    $('div').hover(function(){
+      $(this).css('backgroundColor','green');
+    },function(){
+      $(this).css('backgroundColor','yellow');
+    })
+    $('div').hover(function(){
+      $(this).css('backgroundColor','green');
+    },function(){
+      $(this).css('backgroundColor','yellow')
+    })
+  </script>
+</body>
+
+</html>

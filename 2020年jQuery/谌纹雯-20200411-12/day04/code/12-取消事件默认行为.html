@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <a href="http://www.baidu.com">百度</a>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+
+  <script>
+
+    // <a href="javascript:;">百度</a>
+    // <a href="javascript:void(0);">百度</a>
+
+
+
+
+    $('a').click(function (e) {
+      e.preventDefault();
+    })
+
+  $('tbody').on('click','.get',function(){
+    $(this).parents('tr').remove();
+  })
+  $('.butAdd').click(function(){
+    $('.mask').show();
+    $('.form-add').show();
+  })
+//当点击文本框对应的盒子右上角X会影藏盒子
+   $('#j_hideFormAdd').click(function(){
+     $('.mask').hide();
+     $('.form-add').hide();
+   })
+   $('#j_btnAdd').on('click',function(){
+     let lessonValue=$('#')
+   })
+  </script>
+</body>
+
+</html>

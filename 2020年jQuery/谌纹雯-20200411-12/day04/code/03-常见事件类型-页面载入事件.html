@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* div {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+    } */
+  </style>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script>
+    // 原生DOM
+    // window.onload = function () {
+    //   document.querySelector('.box').onclick = function () {
+    //     alert(11111);
+    //   }
+    // }
+
+    // jquery
+    // $('.box').click(function () {
+    //   alert(1111);
+    // })
+
+    // 下面的方法相当于window.onload
+    //  jQuery的入口函数
+    // $(function () {
+    //   // 
+    //   $('.box').click(function () {
+    //     alert(1111);
+    //   })
+    // })
+
+    // jQuery的入口函数  DOMContentLoaded
+    // $(document).ready(function () {
+    //   $('.box').click(function () {
+    //     alert(1111);
+    //   })
+    // })
+
+    $(function () {
+      $('.box').css({
+        width: 200,
+        height: 200,
+        'backgroundColor': 'red'
+      })
+    })
+
+  </script>
+
+</head>
+
+<body>
+  <div class="box"></div>
+ <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.box').click(function () {
+        alert(1111);
+      })
+    })
+    $(document).ready(function(){
+      $('.box').click(function(){
+       alert(11)
+      })
+    })
+    $(document).ready(function(){
+      $('.box').click(function(){
+        alert(11)
+      })
+    })
+  </script>
+  
+</body>
+
+</html>
