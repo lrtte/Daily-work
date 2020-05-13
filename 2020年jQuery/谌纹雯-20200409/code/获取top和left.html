@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .lm{
+            width: 500px;
+            height: 500px;
+            background-color: coral;
+            margin: 100px auto;
+
+        }
+        .wm{
+            width: 200px;
+            height: 200px;
+            background-color:rgb(100, 212, 247) ;
+        }
+    </style>
+</head>
+<body>
+    <button>按钮</button>
+    <div class="lm">
+        <div class="wm"></div>
+    </div>
+    <script src="./lib/jquery-3.4.1.min.js"></script>
+    <script>
+      let  boxTop=$('.box2').offset().top;
+      //给window添加事件
+      $(document).scroll(function(){
+          //如果页面跑出去的高度大于boxTop那就固定定位
+          if($(document).scrollTop()>=boxTop){
+              $('.box2').css({
+                  'position':'fixed',
+                  'top':'0'
+              })
+          }else{
+              $('.box2').css({
+                  'position':'static'
+              })
+          }
+      })
+ 
+       
+    </script>
+</body>
+</html>
