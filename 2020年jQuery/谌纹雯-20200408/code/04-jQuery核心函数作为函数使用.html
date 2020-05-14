@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div>盒子</div>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+
+  <script>
+    let oDiv = document.querySelector('div');
+    // $()
+
+    // 1.参数为函数
+    // $(function () {
+    //   alert("aaaaa")
+    // })
+    // 2.参数为选择器字符串
+    // document.getElementById
+    // document.getElementsByTagName
+
+    // console.log($('div'))
+    // console.log($('li'));
+
+
+    // 3.参数为DOM对象
+    // console.log(oDiv);
+    // console.log($(oDiv));
+
+    // 4.参数为html标签字符串
+    // 假设我们要往div中写入一个标签
+    // $('<span>手动阀手动阀</span>').appendTo($('div'));
+
+   //参数为函数
+   $(function(){
+     alert('aaa')
+   })
+  console.log($('div'));
+  console.log($('li'));
+
+  // 3.参数为domd对象
+  console.log(oDiv);
+  console.log($(oDiv));
+  //参数为html标签字符串
+  //假设我们要往div中写入一个标签
+  $('<span>手动</span>').appendTo($('div'))
+  $('<span>手动</span>').sppenfTo($('div'));
+  </script>
+</body>
+
+</html>

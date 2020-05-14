@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 所谓的jQuery核心函数,就是$或jQuery
+    // jQuery定义了这个全局的函数提供我们使用
+    // 它既可以作为一般函数调用
+    // 它也可以作为对象调用早就定义好的方法
+  </script>
+  <script>
+    (function (window, undefined) {
+
+      var jQuery = (function () {
+
+        // Define a local copy of jQuery
+        var jQuery = function (selector, context) {
+          //  返回了一个 jquery的对象 只有在创建对象的时候 才会new
+          return new jQuery.fn.init(selector, context, rootjQuery);
+        },
+        return jQuery; // 对象
+      })();
+      // Expose jQuery to the global object
+      window.jQuery = window.$ = jQuery;
+    })(window);
+
+    (function(window,undefined){
+      var jQuery=(function(){
+        var jQuery=function(selector,context){
+          return new jQuery.fn.init(selector,context,rootjQuery);
+        },
+        return jQuery
+      })();
+      window.jQuery=window.$=jQuery;
+    })(window);
+    (function(window,undefined){
+      var jQuery=(function(){
+        var jQuery=function(selector,context){
+          return new jQuery.fn.init(selector,context,rootjQuery);
+        },
+        return jQuery
+      })();
+      window.jQuery=window.$=jQuery;
+    })(window);
+  </script>
+</body>
+
+</html>

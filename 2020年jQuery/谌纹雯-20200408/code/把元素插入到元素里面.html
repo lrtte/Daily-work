@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <button>按钮</button>
+    <div></div>
+<script>
+    $('#left li').mouseover(function(){
+        $('#center li').hide();
+        //获取索引
+        let index=$(this).index();
+        $('#center li').eq(index).show();
+    })
+    $('#rigth li').mouseover(function(){
+        $('#center li').hide();
+        let index=$(this).index()+9;
+        $('#center li').eq(index).show()
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <ul id="ul" class="list">
+    <li>我是ul中的第1个li</li>
+    <li>我是ul中的第2个li</li>
+    <li>我是ul中的第3个li</li>
+    <li>我是ul中的第4个li</li>
+    <li>我是ul中的第5个li</li>
+  </ul>
+  <ul>
+    <li>我是ul中的第1个li</li>
+    <li>我是ul中的第2个li</li>
+    <li>我是ul中的第3个li</li>
+    <li>我是ul中的第4个li</li>
+    <li>我是ul中的第5个li</li>
+  </ul>
+  <ol>
+    <li>我是ol中第1个li</li>
+    <li>我是ol中第2个li</li>
+    <li>我是ol中第3个li</li>
+    <li>我是ol中第4个li</li>
+    <li>我是ol中第5个li</li>
+  </ol>
+  <!-- 
+    ID选择器 
+    标签选择器
+    class选择器
+    通配符选择器
+    并集选择器
+    交集选择器
+   -->
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script>
+
+    // $ is not defined 就是没有引入jquery
+    // let ul = $('#ul');
+    // console.log(Array.isArray(ul)); // false  伪数组
+    // jQuery中只要用$('')获取的元素都是伪数组
+    // 并集选择器
+    // console.log($('ul,ol'));
+
+    // 交集选择器
+    // console.log($('ul.list'))
+  </script>
+</body>
+
+</html>

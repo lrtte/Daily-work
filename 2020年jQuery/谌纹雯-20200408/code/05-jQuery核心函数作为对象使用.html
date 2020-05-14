@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+
+  <script>
+    // jQuery.each(object, [callback])
+    // 功能: 通用遍历方法，可用于遍历对象和数组。
+    // 参数: object:需要遍历的对象或数组。  callback:每个成员/元素执行的回调函数。
+    // 返回值
+
+    // let arr = ['a', 'b', 'd', 'c', 'f'];
+
+    // jQuery.each(arr, function (i, item) {
+    //   console.log(i + '-' + item);
+    // })
+
+
+    // $.each(arr, function (i, item) {
+    //   console.log(i + '-' + item);
+    // })
+
+    // 自己测试
+
+
+    // jQuery.trim(str)
+    // 功能: 去掉字符串起始和结尾的空格。
+    // 参数:str 需要处理的字符串
+    // console.log('       aaaa       ');
+    // console.log($.trim('       aaaa       '));
+
+    let arr=['a','b','c','d','e'];
+    jQuery.each(arr,function(i,item){
+      console.log(i+'-'+item)
+    })
+    $.each(arr,function(i,item){
+      console.log(i+'-'+item)
+    })
+    
+  </script>
+</body>
+
+</html>
