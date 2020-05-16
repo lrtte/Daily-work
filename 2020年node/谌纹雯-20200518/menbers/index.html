@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        头像<input type="file">
+    </form>
+    <img src="" alt="">
+    <script>
+        // 获取元素
+        let oInput=document.querySelector('input');
+        let oImg=document.querySelector('img')
+        // 当input中的文件从空的到有文件的时候  触发
+        oInput.onchange=function(){
+            // 重点
+            let imgUrl=URL.createObjectURL(oInput.files[0])
+            // 设置图片的url
+            oImg.src=imgUrl;
+        }
+    </script>
+</body>
+</html>
