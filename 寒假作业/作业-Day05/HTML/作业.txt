@@ -1,0 +1,8 @@
+﻿1.background的所有属性并说明其作用
+background-color    	背景颜色
+background-image 		给某些元素添加背景图片
+background-repeat		在HTML页面中某个元素中的背景图片进行有规律的重复
+background-position	背景图片位置
+background-attachment	背景附着：设置背景图像是否固定或者随着页面的其余部分滚动，后期可以制作视差滚动效果
+background-size		背景尺寸 
+2.代码题

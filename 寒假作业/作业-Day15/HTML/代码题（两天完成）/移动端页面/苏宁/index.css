@@ -1,0 +1,124 @@
+html,
+body{
+    margin: 0;
+    padding:0;
+    height: 100%;
+    width: 100%;
+    background-color: #f7f7f7;
+}
+header{
+    width:100% ;
+    height:90px ;
+    background-color:#db2828 ;
+}
+.head-top{
+    position: relative;
+}
+.head-top .left{
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  margin-right: 10px;
+}
+.head-top .right{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.head-top .center{
+    padding: 13px 33.3333%;
+}
+.left img ,.right img{
+    width: 18px;
+    height: 28px;
+}
+.center img{
+    width: 126px;
+    height: 20px;
+}
+.head-bottom i img{
+    width: 17px;
+    height: 17px;
+    margin-top: 7px;
+    margin-right: 4px;
+}
+.head-bottom input{
+    border: none;
+    background-color: #fcd5d5;
+    /* padding: 10px 0px; */
+    margin-top: 10px;
+}
+.head-bottom{
+    height: 33px;
+    background-color: #fcd5d5;
+    border-radius: 15px;
+    width: 86%;
+    margin: 0px 20px;
+    padding: 0px 10px;
+}
+.list ul li a img{
+    width: 42px;
+    height:42px ;
+   
+}
+.list ul li a {
+    width: 42px;
+    height:42px ;
+   margin: 0 auto;
+}
+.list ul li{
+float: left;   
+width: 20%;  
+margin:10px 0px;
+}
+/* .list ul li{
+    width: 20%;  
+    margin:10px 0px;
+} */
+.list{
+   margin-top: 10px;
+   width: 100%;
+   margin-left:10px ;
+}
+.list ul {
+  width: 100%;
+    }
+    .ad img{
+        width: 100%;
+    }
+.new{
+    width: 100%;
+}
+.new img{
+  float: left;
+}
+.new img:nth-child(1){
+    width: 50%;
+}
+.new img:nth-child(2){
+    width: 25%;
+}
+.new img:nth-child(3){
+    width: 25%;
+}
+.recommend{
+    width: 100%;
+    margin: 0px 10px;
+    background-color:#ffffff ;
+}
+.recommend-top{
+    width: 100%;
+}
+.recommend-bottom{
+    width: 100%;
+}
+.recommend-top-left{
+float: left;
+}
+.recommend-top-right img{
+    float: left;
+    width: 18%;
+}
+.recommend-top-right p{
+    float: left;
+}

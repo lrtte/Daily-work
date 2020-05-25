@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .big-box {
+            width: 330px;
+            height: 188px;
+            background-color: #00366d;
+            margin: 300px auto;
+            background-image: url(../代码题/代码题/images/paopao.png);
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            border-radius: 10px;
+        }
+
+        .row {
+            width: 343px;
+            height: 200px;
+            background-image: url(../代码题/代码题/images/paopao.png);
+            background-repeat: no-repeat;
+            background-position: 0 -209px;
+        }
+
+        .big-box:hover {
+            animation: move1 3s ease;
+        }
+
+        .row:hover {
+            animation: move2 3s ease;
+        }
+
+        @keyframes move1 {
+            100% {
+                background-position: 0 -200px;
+            }
+        }
+
+        @keyframes move2 {
+            100% {
+                background-position: 0 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-box">
+        <div class="big-box2"></div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .box {
+            width: 450px;
+            height: 300px;
+            margin: 400px auto;
+            position: relative;
+        }
+
+        img {
+            position: absolute;
+            width: 450px;
+            height: 300px;
+            top: 0;
+            left: 0;
+            transform-origin: right top;
+        }
+
+        .box:hover img:nth-child(1) {
+            animation: move1 1s ease;
+        }
+
+        .box:hover img:nth-child(2) {
+            animation: move2 1s ease;
+        }
+
+        .box:hover img:nth-child(3) {
+            animation: move3 1s ease;
+        }
+
+        .box:hover img:nth-child(4) {
+            animation: move4 1s ease;
+        }
+
+        .box:hover img:nth-child(5) {
+            animation: move5 1s ease;
+        }
+
+        .box:hover img:nth-child(6) {
+            animation: move6 1s ease;
+        }
+
+        @keyframes move1 {
+            100% {
+                transform: rotate(60deg);
+                ;
+            }
+        }
+
+        @keyframes move2 {
+            100% {
+                transform: rotate(120deg);
+                ;
+            }
+        }
+
+        @keyframes move3 {
+            100% {
+                transform: rotate(180deg);
+                ;
+            }
+        }
+
+        @keyframes move4 {
+            100% {
+                transform: rotate(240deg);
+                ;
+            }
+        }
+
+        @keyframes move5 {
+            100% {
+                transform: rotate(300deg);
+                ;
+            }
+        }
+
+        @keyframes move6 {
+            100% {
+                transform: rotate(360deg);
+                ;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="../代码题/代码题/images/6.jpg" alt="">
+        <img src="../代码题/代码题/images/1.jpg" alt="">
+        <img src="../代码题/代码题/images/3.jpg" alt="">
+        <img src="../代码题/代码题/images/4.jpg" alt="">
+        <img src="../代码题/代码题/images/5.jpg" alt="">
+        <img src="../代码题/代码题/images/1.jpg" alt="">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+IE  Firefox Safari Chrome Opera
+
+2.Web 标准构成以及好处
+构成：结构（html）、变现（css）、行为（js）
+好处：①内容能被更广泛的设备访问；②更容易被搜寻引擎搜索；③降低网站流量费用；④使网站更易于维护⑤提高页面浏览速度
+
+
+3**1.关于WEB标准下列说法正确的是: **C
+
+A html决定页面的行为，css决定页面的样式，js决定页面的结构
+
+B html决定页面的样式，css决定页面的结构，js决定页面的行为
+
+C html决定页面的结构，css决定页面的样式，js决定页面的行为
+
+D 以上都不正确
+
+
+4. **web 标准里边规定三层分离不包括哪部分**D
+
+A．HTML
+
+B．CSS
+
+C．JavaScript
+
+D．PHP
+
+
+5.**关于WEB标准下列说法正确的是**B
+
+A．html相当于人的动作行为，CSS相当于人的穿着打扮，javascript相当于人的骨架结构；
+
+B．html相当于人的骨架结构，CSS相当于人的穿着打扮，javascript相当于人的动作行为；
+
+C．html相当于人的穿着打扮，CSS相当于人的骨架结构，javascript相当于人的动作行为；
+
+D．html相当于人的骨架结构，CSS相当于人的动作行为，javascript相当于人的穿着打扮；
+
+
+6.HTML 的了解及认识。
+html是超文本标记语言，是用来描述网页的一种语言。
+使用HTML语言，将所需要表达的信息按某种规则写成HTML文件，通过专用的浏览器来识别，
+并将这些HTML文件“翻译”成可以识别的信息，即现在所见到的网页。
+
+css是Cascading Style Sheets 的缩写,即层叠式样式表单，
+它是由W3C协会制定并发布的一个网页排版式标准,是对HTML语言功能的补充。
+
+7.文档类型<!DOCTYPE>的作用，字符集<meta charset="UTF-8" />的作用
+告诉浏览器是用什么版本编写的     告知浏览器此页面属于什么字符编码格式
+
+8.总结我们学过的所有标签，例如：p 块级 独占一行 是具有段落的语义
+div p ul li ol 块级
+strong small b i a sapn  行内
+img input table textare 行内块
+9.代码题

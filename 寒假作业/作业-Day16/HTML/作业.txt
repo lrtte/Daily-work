@@ -1,0 +1,36 @@
+﻿1.总结所有的让元素水平居中的方法
+答:
+①
+div {
+    width:200px;
+    height:200px;
+    margin:0 auto;     
+
+}
+
+②
+div {
+  position: relative;
+}
+div .one{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+③
+div{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+2.em和rem的区别
+答:em继承父级元素的字体大小
+   rem继承html的字体大小
+
+3.less与sass的区别
+答:less定义变量用@
+ sass定义变量用$，并且可以用for、if等语句
+
+4.代码题
