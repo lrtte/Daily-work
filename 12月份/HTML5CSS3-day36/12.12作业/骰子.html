@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./lib/reset/reset.css">
+  <style>
+    .box {
+      position: relative;
+      height: 254px;
+      width: 254px;
+      /* border: 1px solid #65d9fe; */
+      /* box-sizing: border-box; */
+      margin: 200px auto;
+
+      /* border-radius: 10px; */
+      transform-style: preserve-3d;
+      /* transform: rotateX(340deg) rotateY(82deg) rotateZ(20deg); */
+      /* transform: rotate(35deg); */
+      /* transition: all 1s; */
+      animation: hz 3s infinite linear;
+    }
+
+    .kuang {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 254px;
+      width: 254px;
+      border: 14px solid #65d9fe;
+      box-sizing: border-box;
+      border-radius: 10%;
+
+      background-color: rgba(0, 0, 0, 0.1);
+
+    }
+
+
+    h2 {
+      font-size: 35px;
+      color: #df8bea;
+      text-align: center;
+      line-height: 254px;
+      font-weight: normal;
+    }
+
+    .k1 {
+      transform: translateZ(127px)
+    }
+
+    .k2 {
+      transform: translateZ(-127px)
+    }
+
+    .k3 {
+      transform: rotateX(90deg) translateZ(127px);
+    }
+
+    .k4 {
+      transform: rotateX(90deg) translateZ(-127px);
+    }
+
+    .k5 {
+      transform: rotateY(90deg) translateZ(127px);
+    }
+
+    .k6 {
+      transform: rotateY(90deg) translateZ(-127px);
+    }
+
+
+
+    body:hover .k1 {
+      transform: translateZ(180px)
+    }
+
+    body:hover .k2 {
+      transform: translateZ(-180px)
+    }
+
+    body:hover .k3 {
+      transform: rotateX(90deg) translateZ(180px);
+    }
+
+    body:hover .k4 {
+      transform: rotateX(90deg) translateZ(-180px);
+    }
+
+    body:hover .k5 {
+      transform: rotateY(90deg) translateZ(180px);
+    }
+
+    body:hover .k6 {
+      transform: rotateY(90deg) translateZ(-180px);
+    }
+
+    /* 筛子部分 */
+    .box-2 {
+      position: relative;
+      top: 62px;
+      left: 62px;
+      height: 100px;
+      width: 100px;
+      transform-style: preserve-3d;
+      transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      animation: sz 3s infinite linear;
+    }
+
+    .shaizi {
+      position: absolute;
+      left: 0;
+    }
+
+    .s1 {
+      transform: translateZ(50px)
+    }
+
+    .s2 {
+      transform: translateZ(-50px)
+    }
+
+    .s3 {
+      transform: rotateX(90deg) translateZ(50px);
+    }
+
+    .s4 {
+      transform: rotateX(90deg) translateZ(-50px);
+    }
+
+    .s5 {
+      transform: rotateY(90deg) translateZ(50px);
+    }
+
+    .s6 {
+      transform: rotateY(90deg) translateZ(-50px);
+    }
+
+    img {
+      height: 100px;
+      width: 100px;
+    }
+
+    @keyframes hz {
+      0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      }
+
+      100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+      }
+    }
+
+
+
+
+    /*动画 */
+    @keyframes sz {
+      0% {
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+      }
+
+      100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+      }
+    }
+
+    .box span img {
+      width: 227px;
+    height: 227px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <span class="kuang k1">
+      <img src="./images/lin1.jpg" alt="">
+    </span>
+    <span class="kuang k2">
+      <img src="./images/lin2.jpg" alt="">
+    </span>
+    <span class="kuang k3">
+      <img src="./images/lin3.jpg" alt="">
+    </span>
+    <span class="kuang k4">
+      <img src="./images/lin4.jpg" alt="">
+    </span>
+    <span class="kuang k5">
+      <img src="./images/wen.jpg" alt="">
+    </span> 
+    <span class="kuang k6">
+      <img src="./images/wen2.jpg" alt="">
+    </span>
+    <!-- <div class="box-2">
+      <img src="./images/timg.png" alt="">
+      <span class="shaizi s1">
+        <img src="./images/timg.png" alt="">
+      </span>
+      <span class="shaizi s2">
+        <img src="./images/timg.png" alt="">
+      </span>
+      <span class="shaizi s3">
+        <img src="./images/timg.png" alt="">
+      </span>
+      <span class="shaizi s4">
+        <img src="./images/timg.png" alt="">
+      </span>
+      <span class="shaizi s5">
+        <img src="./images/timg.png" alt="">
+      </span>
+      <span class="shaizi s6">
+        <img src="./images/timg.png" alt="">
+      </span>
+    </div> -->
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+@media screen and (width: 320px) {
+  html {
+    font-size: calc(320px / 20);
+  }
+}
+@media screen and (width: 375px) {
+  html {
+    font-size: calc(375px / 20);
+  }
+}
+@media screen and (width: 414px) {
+  html {
+    font-size: calc(414px / 20);
+  }
+}
+/* 1 头部 */
+header{
+height: 38px;
+width: 100%;
+line-height:calc(38rem / 16);
+}
+.header-logo img{
+  height:calc(18rem / 16);
+  margin-left: calc(8rem / 16);
+}
+.header-ipv{
+  height:calc(16rem / 16);
+}
+header span{
+  font-size: calc(10rem / 16);
+  color: #000000;
+  margin-left: calc(14rem / 16);
+}
+.header-logo{
+  
+}
+.header-more{
+  float: right;
+  height:calc(11rem / 16);
+  margin-top: calc(16rem / 16);
+  margin-right: calc(12rem / 16);
+}
+/* 2 登录 login */
+.login{
+  height: calc(30rem / 16);
+}
+.login span{
+  line-height: calc(30rem / 16);
+  margin-left: calc(12rem / 16);
+}
+.login a{
+  color: #0085d0;
+  margin-left: calc(5rem / 16);
+}
+.car{
+  height:calc(120rem / 16);
+}
+.car img{
+  height: 100%;
+  width: 100%;
+}
+/* 4 业务 bus */
+.bus{
+  height:calc(140rem / 16);
+}
+.bus li{
+  float: left;
+  height: calc(48rem / 16);
+  width: calc(64rem / 16);
+  text-align: center;
+  margin-top:  calc(12rem / 16);
+}
+.bus li img{
+  
+  height: calc(34rem / 16);
+  width: calc(34rem / 16);
+}
+.bus li p{
+  margin-top:  calc(4rem / 16);
+  color: #666666;
+  font-size: calc(12rem / 16);
+}
+/* 5 广告 ad */
+.ad{
+  height: calc(58rem / 16);
+}
+.ad img{
+  height: 100%;
+}
+/* 6 全家享 home */
+.home{
+  height: calc(140rem / 16);
+}

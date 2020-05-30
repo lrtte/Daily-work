@@ -1,0 +1,104 @@
+@media screen and (width:320px){
+  html{
+    font-size:calc(320px / 20);
+  }
+}
+@media screen and (width:375px){
+  html{
+    font-size:calc(375px / 20);
+  }
+}
+@media screen and (width:414px){
+  html{
+    font-size:calc(414px / 20);
+  }
+}
+
+html,body{
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+}
+header {
+  position: relative;
+  width: 100%;
+  height: calc(88rem / 32);
+  background-color: #ffa63d;
+}
+header i img{
+  height: calc(32rem / 32);
+  width: calc(20rem / 32);
+  margin-left: calc(20rem / 32);
+  margin-top: calc(28rem / 32);
+}
+header span {
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  font-size: calc(32rem / 32);
+  line-height: calc(88rem / 32);
+  margin-left: calc(18rem / 32);
+  color: #fff;
+}
+/* main */
+/* 全场优惠 */
+.main-all{
+  height:  calc(366rem / 32);
+  width: calc(596rem / 32);
+  margin: calc(24rem / 32);
+  
+}
+.main-title{
+  width: 100%;
+  height: calc(57rem / 32);
+}
+.main-title a{
+  float: left;
+  font-size: calc(28rem / 32);
+  color: #000000;
+}
+.main-title span{
+  float: right;
+  font-size: calc(24rem / 32);
+  color: #959595;
+}
+.all-content{
+  height: calc(314rem / 32);
+}
+.all-content img{
+  height:  calc(314rem / 32);
+  width: calc(587rem / 32);
+  /* border: 1px dotted #dedede; */
+  
+}
+/* 优惠券 */
+.main-juan{
+  height:  calc(872rem / 32);
+  width: calc(592rem / 32);
+  margin: calc(24rem / 32);
+  
+}
+.juan-content img:first-child{
+  height:  calc(222rem / 32);
+  width: calc(587rem / 32);
+}
+.juan-content img:nth-child(2){
+  height:  calc(314rem / 32);
+  width: calc(587rem / 32);
+}
+.juan-three{
+  width:calc(592rem / 32);
+  height: calc(224rem / 32);
+  border: 1px dotted #dedede;
+  margin-top: calc(24rem / 32);
+}
+footer{
+  margin: calc(24rem / 32);
+  margin-top: calc(56rem / 32);
+}
+footer p{
+  font-size: calc(24rem / 32);
+  color: #999999;
+  margin-bottom: calc(15rem / 32);
+}

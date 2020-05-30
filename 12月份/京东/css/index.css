@@ -1,0 +1,516 @@
+.footer{
+    display: flex;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #fff;
+}
+.footer a{
+flex: 1;
+height:100% ;
+width: 100%;
+}
+.footer img{
+    text-align: center;
+    width: auto;
+    height: 100%;
+}
+.head{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color:rgb(224, 50, 50);
+    overflow: hidden;
+    z-index: 10;
+}
+.left{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 60px;
+    height: 40px;
+    background-image: url(../img/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: 401px -103px;
+}
+.center{
+    position: relative;
+  width: 100%;
+  height: 40px;
+  padding-left: 78px;
+  padding-right: 97px;
+   
+}
+.center i{
+    position: absolute;
+    top: 10px;
+    left: 84px;
+    width: 20px;
+    height: 20px;
+    background-position: -59px -109px;
+}
+.center input{
+    border: none;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    background-color: #fff;
+    border-radius: 15px;
+    padding-left: 30px;
+}
+.right{
+    position: absolute;
+    top: 0;
+    right: 13px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+}
+.carousel {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .carousel ul {
+    width: 1000%;
+    overflow: hidden;
+  }
+  
+  .carousel li {
+    float: left;
+    width: 10%;
+  }
+  
+  .carousel a {
+    width: 100%;
+    display: block;
+  }
+  
+  .carousel img {
+    width: 100%;
+  
+  }
+  .content {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 10px;
+  }
+  
+  .content ul {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .content li {
+    float: left;
+    width: 25%;
+    margin-bottom: 10px;
+  }
+  
+  .content  a {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .content img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .content span {
+    display: block;
+    margin-top: 5px;
+  }
+  .seckill {
+    width: 100%;
+    margin-top: 5px;
+    background-color: #fff;
+  }
+  
+  .title {
+    padding: 0 10px;
+    width: 100%;
+    height: 30px;
+  }
+  
+  .title h3 {
+    position: relative;
+    float: left;
+    line-height: 32px;
+    font-weight: normal;
+    padding-left: 24px;
+    font-size: 16px;
+    color: #c91523;
+  }
+  
+  .title h3:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 18px;
+    height: 24px;
+  
+    background-image: url(../image/jd-sprites.png);
+    background-size: 200px 200px;
+    background-position: -84px -109px;
+  }
+  
+  .title .time {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  /* odd(奇数) even(偶数) */
+  .title .time span:nth-child(odd) {
+    background-color: black;
+    color: #fff;
+    padding: 0 2px;
+    padding-top: 1px;
+    border-radius: 3px;
+   
+  }
+  
+  .title .more {
+    float: right;
+    color: #666;
+    line-height: 30px;
+  }
+  
+  .list {
+    width: 100%;
+    padding: 0 10px;
+    padding-bottom: 15px;
+  }
+  
+  .list ul {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .list li {
+    float: left;
+    width: 33.333333%;
+   
+  }
+  
+  .list a {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  .list span {
+    position: absolute;
+    right: 35px;
+    bottom: 12px;
+    height: 20px;
+    padding: 0 5px;
+    background-color: #fdb60a;
+    color: #fff;
+    border-radius: 50%;
+    line-height: 20px;
+    font-size: 12px;
+  }
+  
+  .list img {
+    width: 87%;
+  }
+  
+  .list b,
+  .list s {
+    display: block;
+    text-align: center;
+  }
+  
+  .list b {
+    font-weight: normal;
+    font-size: 16px;
+    color: #c91523;
+    margin-bottom: 5px;
+  }
+  
+  .list s {
+    font-weight: normal;
+    font-size: 12px;
+    color: #666;
+    text-decoration: line-through;
+  }
+  .adv{
+      position: relative;
+      width: 100%;
+  }
+  .adv img{
+      width: 100%;
+  }
+  .adv-left{
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+
+    float: left;
+    width: 48%;
+  }
+  .adv-right{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+      float: right;
+     width: 48%;
+
+  }
+ 
+  .active{
+      width: 100%;
+
+  }
+  .active-top{
+    width: 100%;
+
+}
+.active-top img{
+    width: 32.33333%;
+    
+}
+.active-bottom img{
+    float: left;
+    width: 48%;
+
+}
+
+.ad{
+
+    width: 100%;
+
+}
+.ad img{
+
+    width: 100%;
+
+}
+.market{
+    width: 100%;
+}
+.market-top{
+  box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+}
+.market-top h3{ 
+    height: 34px;
+    line-height: 34px;
+    padding: 0 8px;
+    color: #f25353;
+    font-size: 16px;
+    font-weight: normal;
+}
+main{
+    width: 100%;
+    height: 10000PX;
+}
+div{
+    box-sizing: border-box;
+} 
+.market{
+  width: 100%;
+  box-sizing: border-box;
+}
+.market-bottom {
+  width: 100%;
+  box-sizing: border-box;
+
+}
+/* .market-bottom ul{
+  width: 50%;
+float: left;
+box-sizing: border-box;
+} */
+.market-bottom ul li{
+  width: 50%;
+float: left;
+
+}
+.market-bottom ul li a{
+ display: block;
+}
+.market-bottom img{
+width: 100%;
+ }
+.last img{
+
+  width: 50%;
+  float: left;
+}
+.last ul{
+  width: 100%;
+}
+.last ul li{
+  width: 100%;
+}
+.theme{
+  width: 100%;
+}
+.theme-center{
+  width: 100%;
+
+}
+.theme-center ul{
+  width: 100%;
+
+}
+.theme-center  li{
+  width: 50%;
+float: left;
+}
+.theme-center img{
+  width: 100%;
+}
+.theme-center ul li:nth-child(2) a:last-child{
+  width: 50%;
+  float: left;
+}
+.theme-center ul li:nth-child(2) a:nth-child(2){
+  width: 50%;
+  float: left;
+}
+.theme-bottom{
+  width: 100%;
+}
+.theme-bottom ul{
+  width: 100%;
+  float: left;
+}
+.theme-bottom ul li{
+  width: 100%;
+  float: left;
+}
+.theme-bottom ul li a{
+  width: 25%;
+  float: left;
+}
+.theme-bottom ul li a img{
+  width: 100%;
+  float: left;
+}
+.cat{
+  width: 100%;
+}
+.cat ul{
+  display: block;
+  width: 100%;
+}
+.cat ul li{
+  width: 100%;
+  float: left;
+}
+
+.cat ul li a{
+  display: block;
+  text-decoration: none;
+}
+.cat ul li:nth-child(1){
+  width: 40%;
+}
+.cat ul li:nth-child(2){
+  width: 30%;
+}
+.cat ul li:nth-child(3){
+  width: 30%;
+}
+.cat ul li a img{
+  width: 100%;
+}
+.guess{
+  width: 100%;
+}
+
+.guess-title h3{
+  height: 34px;
+	line-height: 34px;
+	font-size: 16px;
+	color: #7F7F7F;
+	font-weight: normal;
+  float: left;
+  width: 48%;
+ 
+}
+.guess-title a {
+	height: 34px;
+	line-height: 34px;
+	padding-right: 10px;
+	float: right;
+	font-size: 12px;
+	color: #f15353;
+  position: relative;
+  width: 48%;
+
+}
+ .guess .items {
+	overflow: hidden;
+}
+.guess .price{
+  padding-top: 8px;
+	margin-top: 6px;
+	border-top: 1px solid #CCC;
+	font-size: 13px;
+	color: #f15353;
+	position: relative;
+}
+.guess .item {
+	width: 50%;
+	padding: 0 10px;
+	margin: 10px 0 16px 0;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	float: left;
+}
+.price {
+	padding-top: 8px;
+	margin-top: 6px;
+	border-top: 1px solid #CCC;
+	font-size: 13px;
+	color: #f15353;
+	position: relative;
+}
+.price a {
+	position: absolute;
+	top: 8px;
+	right: 0;
+	padding: 2px 4px;
+	color: #999;
+	line-height: 1;
+	font-size: 12px;
+	border-radius: 2px;
+	border: 1px solid #999;
+}
+.guess-list ul li{
+  width: 48%;
+  float: left;
+  margin: 10px;
+}
+.guess-list ul li a img{
+  width: 100%;
+}
+.downmost{
+  width: 100%;
+}
+.add-more{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ccc;
+}
+.add-more p{
+text-align: center;
+}

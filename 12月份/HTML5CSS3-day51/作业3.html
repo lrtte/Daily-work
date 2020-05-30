@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      height: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: hotpink;
+    }
+
+    @media screen and (max-width: 767px) {
+      .container {
+        width: 100%;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      .container {
+        width: 750px;
+        background-color: rgb(223, 70, 93);
+      }
+    }
+
+    @media screen and (min-width: 992px) {
+      .container {
+        width: 970px;
+        background-color: rgb(157, 255, 0);
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      .container {
+        width: 1170px;
+        background-color: rgb(34, 171, 235);
+      }
+    }
+
+      @media screen and (min-width: 1600px) {
+      .container {
+        width: 1600px;
+        background-color: saddlebrown;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container"></div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .big-box{
+            height: 100px;
+            width: 500px;
+            border: 1px solid red;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        ul{
+            height: 100px;
+            width: 1050px;
+            animation: haha 5s linear 2;
+        }
+        li{
+            list-style: none;
+            float: left;
+           
+        }
+        
+        @keyframes haha{
+            0%{
+                transform: translate(0,0);
+            }
+            100%{
+                transform: translate(-1050px,0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="big-box">
+        <ul>
+            <li><img src="./img/five.png" alt=""></li>
+            <li><img src="./img/six.png" alt=""></li>
+            <li><img src="./img/one.png" alt=""></li>
+            <li><img src="./img/six.png" alt=""></li>
+            <li><img src="./img/five.png" alt=""></li>
+            <li><img src="./img/three.png" alt=""></li>
+            <li><img src="./img/two.png" alt=""></li>
+            <li><img src="./img/five.png" alt=""></li>
+            <li><img src="./img/one.png" alt=""></li>
+            <li><img src="./img/six.png" alt=""></li>
+        </ul>
+    </div>
+</body>
+</html>

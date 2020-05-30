@@ -1,0 +1,15 @@
+header{
+    background: red;
+}
+/*注释: 多行注释 css中的注释  会被编译到css文件中*/ 
+// 静默注释:不会被编译到css中 静默注释是给开发者看的
+
+/*变量: 为了少写代码 好维护 好维修代码*/ 
+// 语法:$变量名:变量值;
+$white:#f5f5;
+header{
+    background-color: $white;
+}
+footer{
+    background-color: $white;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/reset.css">
+    <style>
+        .big-box {
+            width: 1494px;
+            height: 355px;
+            background-color: ;
+            margin: 0 auto;
+        }
+
+        .topnav {
+            height: 40px;
+        }
+
+        .topnav a {
+            float: left;
+            margin-right: 38px;
+            font-size: 18px;
+            color: #30312C;
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+
+        .topnav i {
+            float: left;
+            margin-right: 38px;
+            font-size: 18px;
+            color: #0891d9;
+            margin-top: 10px;
+        }
+
+        .buttom {
+            height: 279px;
+            width: 1460px;
+            border-top: 2px solid #0891d9;
+            margin: 0 auto;
+        }
+
+        .view-box {
+            height: 194px;
+            width: 275px;
+            float: left;
+            margin: 0 8px;
+            margin-top: 13px;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .view-box:hover .experience{
+            position: absolute;
+            top: 130px;
+            left: 0px;
+            transition: all 1sw;
+        }
+        .choiceness {
+            height: 70px;
+            width: 100%;
+        }
+
+        .select {
+            height: 26px;
+            width: 50px;
+            float: left;
+            background-color: #3884e5;
+            border-radius: 4px;
+            margin-top: 20px;
+            margin-left: 23px;
+        }
+
+        .select span a {
+            color: #fff;
+            margin-top: 3px;
+            margin-left: 8px;
+        }
+
+        .choiceness i {
+            font-size: 13px;
+            color: #3884e5;
+            line-height: 70px;
+            float: right;
+        }
+
+        .select span {
+            font-size: 15px;
+            color: #ffffff;
+        }
+        .view-box:hover {
+            background-image: linear-gradient(top, red 50%);
+        }
+
+        .view-box img {
+            height: 194px;
+            width: 275px;
+            /* overflow: hidden; */
+            transition: all 1s;
+        }
+        .view-box:hover img{
+            transform: scale(1.2);
+
+        }
+        .experience p {
+            font-size: 14px;
+            line-height: 30px;
+            color: #ffffff;
+            text-align: center;
+        }
+        .experience {
+            position: absolute;
+            top: 155px;
+            left: 0px;
+            height: 100px;
+            width: 275px;
+            background-color: rgba(0,0,0,0.3);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="big-box">
+        <div class="topnav">
+            <a href="">目的地攻略</a>
+            <i>旅游旗舰店</i>
+        </div>
+        <div class="buttom">
+            <div class="choiceness ">
+                <div class="select">
+                    <span><a href="">精选</a></span>
+                </div>
+                <i>更多旗舰馆></i>
+            </div>
+            <div class="view">
+                <div class="view-box">
+                    <img src="./img/1.jpg" alt="">
+                    <div class="experience">
+                        <p>体验馆</p>
+                        <p>体验馆</p>
+                    </div>
+                </div>
+                <div class="view-box">
+                    <img src="./img/2.jpg" alt="">
+                    <div class="experience">
+                        <p>体验馆</p>
+                        <p>体验馆</p>
+                    </div>
+                </div>
+                <div class="view-box">
+                    <img src="./img/3.jpg" alt="">
+                    <div class="experience">
+                        <p>体验馆</p>
+                        <p>体验馆</p>
+                    </div>
+                </div>
+                <div class="view-box">
+                    <img src="./img/4.jpg" alt="">
+                    <div class="experience">
+                        <p>体验馆</p>
+                        <p>体验馆</p>
+                    </div>
+                </div>
+                <div class="view-box">
+                    <img src="./img/5.jpg" alt="">
+                    <div class="experience">
+                        <p>体验馆</p>
+                        <p>体验馆</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

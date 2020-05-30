@@ -1,0 +1,507 @@
+nav {
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 44px;
+  background-color: #fff;
+}
+nav a {
+  flex: 1;
+  height: 100%;
+  text-align: center;
+}
+nav img {
+  width: auto;
+  height: 100%;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #c91523;
+  z-index: 2;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 58px;
+  height: 20px;
+  background-image: url(../images/jd-sprites.png);
+  background-size: 200px 200px;
+  background-position: 0px -109px;
+}
+.search {
+  /* position: relative; */
+  width: 100%;
+  height: 40px;
+  padding-left: 78px;
+  padding-right: 55px;
+  box-sizing: border-box;
+}
+.icon {
+  position: absolute;
+  top: 10px;
+  left: 84px;
+  height: 20px;
+  width: 20px;
+  background-image: url(../images/jd-sprites.png);
+  background-size: 200px 200px;
+  background-position: -59px -109px;
+}
+.search input {
+  border: none;
+  height: 30px;
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 15px;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+.login {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 54px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* 主体 */
+main {
+  height: 10000px;
+  padding-top: 40px;
+  padding-bottom: 44px;
+}
+
+/* 主体 轮播图 */
+.carousel {
+  width: 100%;
+  overflow-x: auto;
+}
+.carousel ul {
+  width: 1000%;
+}
+.carousel li {
+  width: 10%;
+}
+.carousel a {
+  width: 100%;
+  display: block;
+}
+.carousel img {
+  width: 100%;
+}
+/* 主体-导航 */
+.daohang {
+  width: 100%;
+  background-color: #fff;
+}
+.daohang ul {
+  width: 100%;
+  overflow: hidden;
+}
+.daohang li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  margin-top: 10px;
+}
+.daohang img {
+  height: 40px;
+  width: 40px;
+}
+.daohang span {
+  display: block;
+  color: #666666;
+}
+/* 3.3主体 秒杀seckill */
+.seckill {
+  width: 100%;
+  margin-top: 5px;
+  background-color: #fff;
+  margin-top: 10px;
+}
+.seckill-title {
+  width: 100%;
+  height: 40px;
+  /* background-color: aquamarine; */
+  padding: 0 10px;
+}
+.seckill-title h3 {
+  position: relative;
+  float: left;
+  margin-top: 13px;
+  margin-left: 24px;
+  color: #ca1327;
+  font-size: 16px;
+  font-weight: normal;
+}
+.seckill-title h3:before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -26px;
+  /* margin-left: 10px; */
+  width: 28px;
+  height: 23px;
+  background-image: url(../images/jd-sprites.png);
+  background-size: 200px 200px;
+  background-position: -80px -109px;
+}
+.time {
+  float: left;
+  margin-top: 14px;
+  margin-left: 4px;
+}
+.time span:nth-child(2n + 1) {
+  display: inline-block;
+  width: 18px;
+  height: 16px;
+  background-color: #3d3d3d;
+  color: #fff;
+  padding: 2px;
+}
+.more {
+  float: right;
+  margin-top: 16px;
+  color: #b2b2b2;
+}
+.seckill-product {
+  width: 100%;
+  height: 150px;
+  /* background-color: red */
+}
+.seckill-product ul {
+  width: 100%;
+  height: 100%;
+}
+.seckill-product li {
+  position: relative;
+  float: left;
+  width: 33.3333333333333%;
+  height: 100%;
+  text-align: center;
+  /* height: auto; */
+}
+.seckill-product span {
+  content: "";
+  top: 84px;
+  left: 77px;
+  position: absolute;
+  height: 20px;
+  width: 32px;
+  color: #fff;
+  line-height: 20px;
+  border-radius: 50%;
+  background-color: #fdb60a;
+  font-size: 12px;
+}
+.seckill-product img {
+  /* float: left; */
+  height: 100px;
+  width: 100px;
+}
+.seckill-product b {
+  display: block;
+  font-size: 14px;
+  color: #ef568d;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+.seckill-product s {
+  color: #ac9888;
+  text-decoration: line-through;
+}
+/* 3.4 活动 active */
+.active {
+  height: 187px;
+  width: 100%;
+  background-image: url(../uploads/banner_bg.jpg);
+  background-size: cover;
+}
+.active a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.active ul {
+  position: relative;
+  top: 38px;
+  height: 142px;
+  width: 100%;
+  padding: 10px;
+}
+.active img {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+/* 产品 product */
+.product {
+  height: 350px;
+  width: 100%;
+  background-color: #ffffff;
+}
+.product ul {
+  height: 100%;
+  width: 100%;
+}
+.product li:nth-child(-n + 3) {
+  float: left;
+  width: 33.3333333333333%;
+  height: 150px;
+  background-color: red;
+}
+.product a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.product li:nth-last-child(-n + 4) {
+  float: left;
+  width: 50%;
+  height: 95px;
+}
+.product img {
+  width: 100%;
+}
+/* 3.6广告 */
+.adv {
+  width: 100%;
+  padding: 10px;
+}
+.adv a {
+  display: block;
+  width: 100%;
+}
+.adv img {
+  width: 100%;
+}
+/* 3.7 超市 market */
+.market {
+  height: 310px;
+  width: 100%;
+  /* background-color: red; */
+}
+.market-title {
+  height: 26px;
+  width: 100%;
+  /* background-color: yellow; */
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 16px;
+}
+.market-title a {
+  color: #f25353;
+}
+.market-product {
+  height: 100%;
+  /* width: 100%; */
+  /* background-color: gray */
+  padding: 10px;
+}
+.market-product ul {
+  height: 100%;
+  width: 100%;
+}
+
+.market-product li {
+  float: left;
+  width: 50%;
+  height: 92px;
+}
+.market-product li:first-child {
+  height: 182px;
+}
+.market-product img {
+  width: 100%;
+}
+
+/* 3.8 主题街 theme */
+.theme {
+  height: 455px;
+  width: 100%;
+}
+.theme-product {
+  height: 100%;
+  width: 100%;
+  /* background-color: teal; */
+}
+.theme-product ul {
+  width: 100%;
+  height: 100%;
+}
+.theme-product li {
+  float: left;
+  width: 25%;
+  height: 107px;
+}
+.theme-product li:first-child {
+  width: 50%;
+  height: 110px;
+}
+.theme-product li:nth-child(2) {
+  width: 50%;
+}
+.theme-product img {
+  width: 100%;
+}
+
+/* 3.9 品牌推荐 brand */
+.brand {
+  height: 210px;
+  width: 100%;
+}
+.brand-product ul {
+  height: 100%;
+  width: 100%;
+}
+.brand-product li {
+  float: left;
+  width: 40%;
+}
+.brand-product li:nth-last-child(-n + 2) {
+  width: 30%;
+}
+.brand-product img {
+  width: 100%;
+}
+/* 猜你喜欢 */
+.guess {
+  width: 100%;
+  background-color: #fff;
+}
+.guess-title {
+  width: 100%;
+  height: 26px;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.guess-title h3 {
+  float: left;
+  font-weight: lighter;
+  font-size: 16px;
+  color: #666;
+}
+.guess-title a {
+  position: relative;
+  margin-top: 6px;
+  float: right;
+  color: #f45152;
+}
+.guess-title a::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -22px;
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/icon-login.png);
+  background-size: 18px 18px;
+}
+.guess-list {
+  width: 100%;
+}
+.guess-list ul {
+  width: 100%;
+  overflow: hidden;
+}
+.guess-list li {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+.guess-list li > a {
+  display: block;
+  width: 100%;
+}
+.guess-list li img {
+  width: 100%;
+  padding: 15px 0;
+}
+.guess-list li p {
+  /* 1，规定p标签的宽度 */
+  width: 100%;
+  /* 2.让文字超出以后自动出现省略号 */
+  text-overflow: ellipsis;
+  /* 3.规定p标签的显示方式 */
+  display: -webkit-box;
+  /* 4.规定文字中显示几行 */
+  -webkit-line-clamp: 2;
+  /* 5.设置排列方式 横向还是竖向 */
+  -webkit-box-orient: vertical;
+  /* 6.z换行方式 单词换行 无论是不是单词坚持换行 */
+  word-break: break-all;
+  /* 7.隐藏多余的文字 */
+  overflow: hidden;
+  font-size: 14px;
+  color: #666;
+}
+.guess-list-price{
+  margin-top: 3px;
+}
+.guess-list-price b{
+line-height: 20px;
+columns: #f25353;
+font-weight: normal;
+}
+.guess-list-price a{
+  float: right;
+  color: #999;
+  border: 1px solid #999;
+  border-radius: 2px;
+  padding: 0 2px;
+  padding-top: 2px;
+}
+
+/* 3.11 底部footer */
+.footer{
+  width: 100%;
+}
+.load-more{
+  display: block;
+  width: 100%;
+  height: 35px;
+  text-align: center;
+  line-height:35px;
+ border-top: 1px solid #ccc;
+ /* border-bottom: 1px solid #ccc; */
+ font-size: 14px;
+ color: #666;
+}
+.feedback{
+  width: 100%;
+  overflow: hidden;
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+.feedback a{
+  color: #666;
+  font-size: 14px;
+  padding: 0 24px;
+  border-right: 1px solid #ccc;
+}
+.feedback a:last-child{
+  border-right: none;
+}
+.version{
+  border-top: 1px solid #ccc;
+  font-size: 12px;
+  padding: 0 24px;
+  text-align: center;
+
+}
+.version a{
+  position: relative;
+  font-size: 12px;
+  
+}

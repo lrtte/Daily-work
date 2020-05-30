@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>携程旅行</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font: 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+		}
+		a {
+			text-decoration: none;
+		}
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.all {
+			min-width: 320px;
+		}
+		.banner {
+			display: flex;
+		}
+
+		.banner a {
+			flex: 1;
+		}
+		.main {
+			padding: 5px;
+		}
+		.item-box {
+			height: 90px;
+			margin-bottom: 5px;
+			display: flex;
+			border-radius: 5px;
+		}
+		.empty {
+			flex: 1;
+		}
+		.list {
+			flex: 2;
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.list a {
+			width: 50%;
+			height: 45px;
+			text-align: center;
+			line-height: 45px;
+			border-left: 1px solid #FFF;
+			border-top: 1px solid #FFF;
+			color: #FFF;
+			font-size: 14px;
+			text-shadow: 0 2px 1px rgba(0,0,0,0.2);
+			box-sizing: border-box;
+		}
+
+		.list a:nth-child(-n+2) {
+			border-top: 0 none;
+		}
+
+		.item-box:nth-child(1) {
+			background-color: #ff697a;
+		}
+
+		.item-box:nth-child(2) {
+			background-color: #3d98ff;
+		}
+
+		.item-box:nth-child(3) {
+			background-color: #44c522;
+		}
+
+		.item-box:nth-child(4) {
+			background-color: #fc9720;
+		}
+
+		.item-box:nth-child(4) .list a {
+			width: 33.333%;
+		}
+
+		.item-box:nth-child(4) .list a:nth-child(-n+3) {
+			border-top: 0 none;
+		}
+
+		
+		
+	</style>
+</head>
+<body>
+	<div class="all">
+		<!-- 头部 -->
+		<div>
+			<div class="banner">
+				<a href="">
+					<img src="./img/banner.jpg">
+				</a>
+			</div>
+		</div>
+		<!-- 内容 -->
+		<div class="main">
+			<div class="nav">
+				<div class="item-box">
+					<div class="empty"></div>
+					<div class="list">
+						<a href="">海外酒店</a>
+						<a href="">团购</a>
+						<a href="">特惠酒店</a>
+						<a href="">客栈公寓</a>
+					</div>
+				</div>
+				<div class="item-box">
+					<div class="empty"></div>
+					<div class="list">
+						<a href="">火车票</a>
+						<a href="">汽车票船票</a>
+						<a href="">国际机票</a>
+						<a href="">自驾专车</a>
+					</div>
+				</div>
+				<div class="item-box">
+					<div class="empty"></div>
+					<div class="list">
+						<a href="">攻略身边</a>
+						<a href="">邮轮</a>
+						<a href="">周末游</a>
+						<a href="">保险签证</a>
+					</div>
+				</div>
+				<div class="item-box">
+					<div class="list">
+						<a href="">门票玩乐</a>
+						<a href="">美食</a>
+						<a href="">全球购</a>
+						<a href="">礼品卡</a>
+						<a href="">出境WIFI</a>
+						<a href="">更多</a>
+					</div>
+				</div>
+			</div>
+					
+		</div>
+		
+	</div>
+</body>
+</html>

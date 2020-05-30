@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/reset.css">
+    <style>
+        .big-box {
+            height: 236px;
+            width: 1170px;
+            margin: 0 auto;
+            background-color: #fdfdfd;
+        }
+
+        .topnav {
+            height: 65px;
+        }
+
+        .topnav a {
+            font-size: 22px;
+            float: left;
+            line-height: 65px;
+        }
+
+        .topnav i {
+            font-size: 12px;
+            float: right;
+            line-height: 65px;
+        }
+
+        .bottom img {
+
+            height: 162px;
+            width: 559px;
+            overflow: hidden;
+            /* 过渡 */
+            transition: all 1s;
+        }
+
+        .bottom img:hover {
+             transform: scale(1.2);  /*scale(缩放) */
+            
+        }
+
+        .bottom {
+            height: 162px;
+            width: 559px;
+            border: 1px solid;
+            overflow: hidden;
+            float: left;
+            margin: 23px 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-box">
+        <div class="topnav"><a href="">品牌专区</a><i>更多+</i></div>
+        <div class="bottom">
+            <img src="./img/1.jpeg" alt="">
+        </div>
+        <div class="bottom">
+            <img src="./img/2.jpeg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

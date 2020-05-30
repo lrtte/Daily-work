@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="../lib/reset/reset.css">
+  <style>
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+    }
+
+    .box {
+      height: 226px;
+      width: 1146px;
+      /* border: 1px solid teal; */
+      margin: 0 auto;
+    }
+
+    .box-title {
+      height: 66px;
+      width: 100%;
+      line-height: 66px;
+    }
+
+    .box-title h2 {
+      float: left;
+      font-size: 24px;
+      color: #556e8b;
+      font-weight: normal;
+      margin-left: 25px;
+    }
+
+    .box-title span {
+      float: right;
+      font-size: 14px;
+      color: #928d91;
+    }
+
+    .box-div-o,
+    .box-div-t{
+      float: left;
+      height: 160px;
+      width: 556px;
+      /* border: 1px solid red; */
+      overflow: hidden;
+    }
+
+    .box-img img {
+      /* float: left; */
+      height: 160px;
+      width: 556px;
+    }
+
+    .box-div-o {
+      margin-right: 20px;
+    }
+
+    .box-img img:hover {
+      transform: scale(1.1);
+      transition: all 1s;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <div class="box-title">
+      <h2>品牌专区</h2>
+      <span>更多 +</span>
+
+    </div>
+    <div class="box-img">
+      <div class="box-div-o">
+
+        <img src="./images/1.jpeg" alt="" class="box-img-o">
+      </div>
+      <div class="box-div-t">
+
+        <img src="./images/2.jpeg" alt="" class="box-img-t">
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

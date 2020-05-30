@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .big-box {
+            position: relative;
+            height: 500px;
+            width: 500px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            transform: rotateX(174deg) rotateY(211deg) rotateZ(98deg);
+        }
+
+        span {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 500px;
+            width: 500px;
+            font-size: 300px;
+            text-align: center;
+            color: black;        
+        }
+        .big-box:hover {
+            transform: rotateX(200deg) rotateY(10deg) rotateZ(360deg);
+            animation-iteration-count: infinite;
+            transition: all 5s;
+        }
+        span:nth-child(1) {
+
+            background-color: rgba(0,0,0,0.2);
+            transform: translateZ(250px);
+        }
+
+        span:nth-child(2) {
+            background-color: rgba(0,255,255,0,3);
+            transform: translateZ(-250px);
+        }
+
+        span:nth-child(3) {
+            background-color: rgba(255,0,0,0.3);
+            transform: rotateX(90deg) translateZ(250px);
+        }
+
+        span:nth-child(4) {
+            background-color: rgba(0,255,0,0.3);
+            transform: rotateX(90deg) translateZ(-250px);
+        }
+
+        span:nth-child(5) {
+            background-color: rgb(235, 35, 235,0.4);
+            transform: rotateY(90deg) translateZ(250px);
+        }
+
+        span:nth-child(6) {
+            background-color: rgba(255,255,2,0.3);
+            transform: rotateY(90deg) translateZ(-250px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="big-box">
+        <span><img src="./img/1.jpg" alt=""></span>
+        <span><img src="./img/2.jpg" alt=""></span>
+        <span><img src="./img/3.jpg" alt=""></span>
+        <span><img src="./img/4.jpg" alt=""></span>
+        <span><img src="./img/5.jpg" alt=""></span>
+        <span><img src="./img/two.png" alt=""></span>
+    </div>
+</body>
+
+</html>
