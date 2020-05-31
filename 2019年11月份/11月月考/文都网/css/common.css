@@ -1,0 +1,15 @@
+.container{
+    width:1210px ;
+    margin: 0 auto;
+}
+.clearfix:before,
+.clearfix:after{
+    content: "";
+    display: table;
+}
+.clearfix:before{
+    clear: both;
+}
+.clearfix{
+    *zoom: 1;
+}

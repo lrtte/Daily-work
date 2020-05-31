@@ -1,0 +1,658 @@
+.topnav{
+    width: 100%;
+    height: 40px;
+    background-color:RGB(51,51,51)
+}
+.topnav-left{
+    float: left;
+}
+.topnav-right{
+    float: right;
+}
+.topnav-left a,span{
+    color: RGB(176,176,176);
+}
+.topnav-left a{
+    margin: 0 9px;
+}
+a:hover{
+    color: #fff;
+}
+.topnav-left i{
+    color: RGB(60,66,60);
+}
+a,span{
+    line-height: 40px;
+    color: rgb(146, 141, 141);
+    margin-right: 10px;
+}
+a,i{
+    color: rgb(146, 141, 141);
+}
+topnav-right i{
+    color: RGB(176,176,176);
+}
+.topnav-right .gouwuche{
+    display: block;
+    float: right;
+    width: 121px;
+    height: 40px;
+    background-color:RGB(66,66,66);
+    text-align: center;
+}
+.topnav-right .gouwuche:hover{
+      color: coral;
+      background: white;
+}
+.search{
+    width: 100%;
+    height: 102px;
+}
+.left{
+    float: left;
+    width: 57px;
+    height: 57px;
+    background-color: RGB(255,103,0);
+    margin: 23px 5px;
+}
+.center{
+    float: left;
+    font-size: 18px;
+    margin-left: 188px;
+    margin-top: 42px;
+}
+.center a{
+    color: RGB(51,51,51);
+    
+}
+.right{
+    position: relative;
+    float: left;
+    width: 243px;
+    height: 26px;
+    float: right;
+    height: 50px;
+    width: 296px;
+    border: 1px solid RGB(224,224,224);
+    margin-top: 33px;
+}
+input{
+    float: left;
+    width: 242px;
+    height: 26px;
+    margin-top: 10px;
+    border: none;
+}
+button{
+    float: right;
+    width:49px ;
+    height:48px ;
+    background-color: #fff;
+    border: none;
+}
+.search-box{
+    float: right;
+    height: 50px;
+    width: 50px;
+    border-left:1px solid RGB(224,224,224);
+    box-sizing: border-box;
+}
+
+
+ .right .info{
+    position: absolute;
+    top: 5px;
+    right: 60px;
+} 
+.carouse{
+    height: 460px;
+}
+.carouse ul a{
+    display: block;
+}
+.carouse-aside{
+    position: absolute;
+    width: 236px;
+    height: 462px;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(154,153,153,0.5);
+    box-sizing: border-box;
+}
+.carouse-aside:hover{
+    background-color: rgba(154,153,153,1);
+}
+.carouse-aside{
+    padding-top: 20px;
+}
+.carouse-aside a{
+    display: block;
+    height: 43px;
+    color: RGB(238,238,244);
+    width: 208px;
+    padding-left: 28px;
+    
+}
+.carouse-aside a:hover{
+    background-color: orangered;
+} 
+.radius{
+    position: absolute;
+    top: 547px;
+    left: 1329px;
+    height: 12px;
+    width: 174px;
+
+}
+.radius i{
+   
+    float: left;
+    width: 7px;
+    height: 7px;
+    border: 2px solid RGB(98,104,156);
+    border-radius: 50%;
+    margin: 8px;
+    
+}
+.radius i:hover{
+    background-color: #fff;
+}
+.iconfont-arrow-right-big{
+    height: 12px;
+    width: 12px;
+    float: right;
+    font-size: 14px;
+    margin-right: 14px;
+}
+.iconfont-arrow-left-big-thin:hover,.iconfont-arrow-right-big-thin:hover{
+    width: 25px;
+    height: 34px;
+}
+.iconfont-arrow-left-big-thin:hover,.iconfont-arrow-right-big-thin:hover{
+   background-color: rgb(148, 144, 144);
+}
+.iconfont-arrow-left-big-thin{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    color: #fff;
+    top: 211px;
+    left: 237px;
+    text-align: center;
+}
+.iconfont-arrow-right-big-thin{
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
+    color: #fff;
+    top: 211px;
+    left: 1190px;
+    text-align: center;
+}
+.discount{
+    margin-top: 15px;
+    width: 100%;
+    height: 170px;
+}
+.advertise{
+    width: 236px;
+    height: 170px;
+    background-color:RGB(95,87,80) ;
+    float: left;
+}
+.advertise a{
+    float: left;
+    /* display: inline-block; */
+    height: 85px;
+    width: 68px;
+    opacity: 0.75;
+}
+.advertise a:hover{
+    opacity: 1;
+}
+.advertise img{
+    display: block;
+    width: 26PX;
+}
+.advertise a:before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 68px;
+    border-top: 1px solid RGB(102,94,87);
+    margin-top: 4px;
+    margin-left: 9px;
+}
+.advertise a:after{
+    content: "";
+    position: absolute;
+    height: 70px;
+    width: 1px;
+    border-left: 1px solid RGB(102,94,87);
+    margin-left: -50px;
+    margin-top: 13px;
+    
+}
+.advertise a span{
+    float: left;
+    display: block;
+    margin-left: 16px;
+    /* width: 100%; */
+    width: 68px;
+}
+.discount{
+    margin-top: 14px;
+    margin-bottom: 26px;
+}
+ .discount img{
+    height: 170px;
+    width: 316px;
+    float: left;
+    margin-left: 10px;
+}
+
+
+.advertise a img{
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+    margin-top: 22px;
+}
+.flash{
+    width: 100%;
+    height: 434px;
+    background-color: RGB(245,245,245);
+}
+.flash-box{
+    width: 100%;
+    height: 65px;
+}
+.tittle span{
+    font-size: 20px; 
+    font-weight: 300;
+    color:RGB(51,51,51);
+    float: left;
+}
+.all{
+    width: 100%;
+    height: 343px;
+}
+.flash-right{
+    float: right;
+}
+
+.times{
+    height: 342px;
+    width: 100%;
+    background-color: RGB(245,245,245);
+}
+.one{
+    height: 342px;
+    width: 235px;
+    float: left;
+    border-top: 1px solid orangered;
+    margin-left: 11px;
+    background-color: RGB(250,250,250);
+}
+.two{
+    height: 342px;
+    width: 235px;
+    float: left;
+    border-top: 1px solid olive;
+    margin-left: 11px;
+    background-color: RGB(250,250,250);
+}
+.three{
+    height: 342px;
+    width: 235px;
+    float: left;
+    border-top: 1px solid olivedrab;
+    margin-left: 11px;
+    background-color: RGB(250,250,250);
+}
+.four{
+    height: 342px;
+    width: 235px;
+    float: left;
+    border-top: 1px solid orange;
+    margin-left: 11px;
+    background-color: RGB(250,250,250);
+}
+
+.one h3 span {
+    color: orangered;
+    font-size: 21px;
+    margin-top: 64px;
+}
+.one h3{
+    color: orangered;
+    font-size: 21px;
+    margin-top: 64px;
+    margin-left: 80px;
+}
+.one p{
+    font-size: 16px;
+    color:rgb(138, 133, 133);
+    margin-left:72px;
+    
+}
+.lightning img{
+    text-align: center;
+    margin-left:100px ;
+}
+
+.small-box{
+     margin-top: 33px;
+     margin-left:18px
+}
+.small-box span{
+    text-align: center;
+    height: 48px;
+    width: 48px;
+    background-color: RGB(96,87,81);
+    float: left;
+    font-size:20px ;
+    color: #fff;
+    margin: 0 8px;
+}
+.small-box small{
+    float: left;
+    font-size:20px ;
+    color:RGB(96,87,81) ;
+   margin-top:12px ;
+}
+.show img{
+    width: 117px;
+    height: 150px;
+  margin-top :58px;
+    margin-left: 65px;
+}
+ h4{
+    font-size: 14px;
+    color: RGB(32,32,32);
+    text-align: center;
+}
+.show p{
+    font: size 13px;
+    color: RGB(173,173,173);
+    text-align: center;
+}
+.show .new{
+   color: RGB(250,101,9);
+   font-size: 13px;
+   margin-left: 78px;
+   margin-top: 20px;
+}
+.show del{
+    color: RGB(175,175,175);
+    text-decoration: line-through;
+}
+.reduced{
+    position: absolute;
+    top: 65px;
+    left: 340px;
+    display: block;
+    width: 66px;
+    height:22px ;
+    line-height: 22px;
+    color: #fff;
+    background-color: red;
+    text-align: center;
+}
+.long{
+    background-color: RGB(245,245,245);
+    height: 120px;
+    width: 100%;
+}
+.phone{
+    height: 764px;
+    width: 100%;
+}
+.phone-nav{
+    width: 100%;
+    height: 80px;
+}
+.bottpm-box{
+    width: 100%;
+    height: 616px;
+}
+.phone-left{
+    line-height: 80px;
+    float: left;
+    font-size: 22px;
+}
+.phone-left h3{
+    font-weight: lighter;
+}
+.phone-right{
+    float: right;
+    line-height: 80px;
+    font-size: 20px;
+    
+}
+.phone-right a{
+    color: black;
+}
+.phone-left-bottom{
+    float: left;
+}
+.phone-right-bottom{
+  float: right;
+  width: 994px;
+  height: 616px;
+  margin-top:-10px;
+}
+.phone-list{
+    box-shadow:  0px 0px 20px rgb(212, 210, 210);
+    float: left;
+    height: 301px;
+    width: 236px;
+    background-color:RGB(255,255,255) ;
+    margin: 10px 5px;
+
+}
+
+.ability{
+    text-align: center;
+    color: RGB(176,176,176);
+    font-size: 14px;
+    margin-top: 10px;
+}
+.price{
+    display: block;
+    color: RGB(255,103,0);
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 86px;
+}
+.price-box{
+    margin-left:64px ;
+}
+.price-box span{
+color:RGB(255,103,0) ;
+}
+.old-price{
+    text-decoration: line-through;
+}
+.ad{
+    height: 130px;
+    width: 100%;
+}
+/* .title{
+    float: left;
+}
+.TV{
+    float: left;
+} */
+.homeapp{
+    height: 700px;
+    width: 100%;
+}
+.home-list{
+    box-shadow:  0px 0px 20px rgb(212, 210, 210);
+    width: 238px;
+    height: 302px;
+    float: left;
+    margin: 14px 5px;
+}
+.can{
+    text-align: center;
+    color: RGB(176,176,176);
+    font-size: 14px;
+    margin-top: 10px;
+}
+.money{
+    display: block;
+    color: RGB(255,103,0);
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 86px;
+}
+.cut1{
+    margin-bottom: 16px;
+}
+.cut2,.cut1{
+    height: 145px;
+    width: 237px;
+    box-shadow:  0px 0px 20px rgb(212, 210, 210);
+}
+.home-left{
+    margin-top: 40px;
+    margin-left:30px ;
+    float: left;
+    color: RGB(255,103,0);
+}
+.home-left a{
+    color: RGB(51,51,51);
+    margin-top: 46px;
+}
+.home-right{
+    width: 78px;
+    height: 63px;
+    margin-left:-4px ;
+    margin-top: 37px;
+    height: 142px;
+    float: left;
+}
+.more{
+    float: left;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.more h2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.more a{
+    font: 13px;
+}
+.iconfont{
+   float: right;
+}
+.add {
+    width: 100%;
+    height: 124px;
+}
+.video-box{
+    height: 367px;
+}
+.video{
+    width: 100%;
+    height: 288px;
+}
+.video-bottom{
+    position: relative;
+    height: 288px;
+    width: 298px;
+    float: left;
+    margin: 0 6px;
+}
+.video-bottom img{
+    width: 298px;
+    height: 182px;
+}
+.video-bottom p{
+    text-align: center;
+    margin-top:34px ;
+    font-size: 14px;
+    color: RGB(51,51,51);
+}
+.video-bottom a{
+    position: absolute;
+    top: 141px;
+    left: 13px;
+    width: 38px;
+    height: 26px;
+    border-radius: 15px;
+    border: 2px solid #fff;
+
+}
+.video-bottom a:hover{
+    background-color: rgb(230, 102, 56);
+}
+.iconfont-play{
+    position: absolute;
+    top: -5px;
+    left: 5px;
+    font-size: 30px;
+    color:#fff;
+}
+.sell{
+    width: 100%;
+    height: 280px;
+}
+.sell-top{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+}
+.sell-top a{
+    padding-top:27px 0;
+    float: left;
+    width: 238px;
+    text-align: center;
+    border-right: 1px solid gray ;
+}
+.sell-top a i{
+    font-size: 27px;
+}
+dl{
+    float: left;
+    margin-top: 43px;
+    margin-right: 103px;
+}
+.sell-left dl dd{
+    color: RGB(117,117,117);
+}
+.sell-left  dd:hover{
+    color:RGB(255,103,0) ;
+}
+.sell-right{
+    text-align: center;
+    margin-top: 42px;
+
+}
+.sell-right h3{
+    font-size: 20px;
+    color: RGB(255,103,0);
+    margin-left: 58px;
+    margin-top: 8px;
+}
+.sell-right p{
+    text-align: center;
+    margin-top: 8px;
+}
+.sell-right a i{
+    color:RGB(255,103,0);
+    margin-top: 8px;
+}
+.sell-right a{
+    height:35px ;
+    width: 130px;
+    border: 2px solid RGB(255,103,0);
+    color:RGB(255,103,0);
+    margin-right: 0;
+}
