@@ -1,0 +1,256 @@
+html {
+  margin-bottom: 500px;
+}
+.topnav {
+  height: 30px;
+  width: 100%;
+  background-color: #f5f5f5;
+  line-height: 30px;
+}
+.topnav-left {
+  float: left;
+}
+.topnav-left span {
+  margin-right: 28px;
+  color: #808080;
+}
+.topnav-left a {
+  color: #e40077;
+}
+.topnav-right {
+  float: right;
+}
+.topnav-right a {
+  margin-left: 28px;
+  color: #808080;
+}
+.topnav-right a span {
+  color: #e40077;
+}
+
+/*  2.搜索栏 */
+.search {
+  height: 135px;
+  width: 100%;
+  /* background-color: aquamarine; */
+}
+.search-top {
+  height: 88px;
+  width: 100%;
+  /* background-color: cadetblue; */
+}
+.search-top-left {
+  float: left;
+}
+.search-top-left img {
+  float: left;
+  margin-top: 18px;
+  margin-right: 14px;
+}
+.search-top-left span {
+  float: left;
+  margin-top: 42px;
+  font-size: 15px;
+}
+.search-top-right {
+  float: right;
+}
+.search-top-right-search {
+  height: 32px;
+  width: 498px;
+  border: 1px solid #25b2fe;
+  box-sizing: border-box;
+  margin-top: 22px;
+}
+.search-top-right input {
+  float: left;
+  margin-left: 8px;
+  margin-top: 10px;
+  background-color: transparent;
+  border: none;
+}
+.search-top-right-search button {
+  float: right;
+}
+.search-top-right-search > div button {
+  height: 30px;
+  width: 77px;
+  background-color: #25b2fe;
+  border: none;
+}
+.search-top-right > a {
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.search-top-right > a:nth-child(2n) {
+  color: #e40077;
+}
+.search-top-bottom{
+  height: 46px;
+  width: 100%;
+  border-bottom: 1px solid #3eb4fa;
+}
+.search-top-bottom > div {
+  float: left;
+  height: 46px;
+  width: 234px;
+  background-color: #3eb4fa;
+  line-height: 48px;
+  font-size: 16px;
+  color: #ffffff;
+  padding-left: 66px;
+  box-sizing: border-box;
+}
+.search-top-bottom > a {
+  float: left;
+  margin-left: 58px;
+  font-size: 16px;
+  color: #222222;
+  margin-top: 16px;
+}
+.search-top-bottom>a:nth-child(2){
+  color: #3eb4fa;
+}
+/* 3. 轮播 carousel */
+.carousel {
+  height: 400px;
+  width: 100%;
+  background-color: #0c1345;
+}
+.carousel-left{
+  float: left;
+  height: 398px;
+  width: 235px;
+  /* background-color: saddlebrown; */
+}
+.carousel-left>ul{
+  height: 398px;
+  width: 235px;
+  background-color: #ffffff;
+}
+.carousel-left>ul li,
+.carousel-left>ul img{
+  float: left;
+}
+.carousel-left>ul li{
+  height: 54px;
+  width: 149px;
+  /* background-color: slategray; */
+  line-height: 54px;
+  font-size: 15px;
+  color: #333333;
+}
+.carousel-left>ul s{
+  float: right;
+  color: #909091;
+}
+.carousel-left>ul img{
+  margin-left: 32px;
+  margin-top: 17px;
+  margin-right: 10px;
+}
+.carousel-center{
+  float: left;
+  height: 400px;
+  width: 705px;
+  background-color: salmon;
+}
+.carousel-right{
+  float: right;
+  height: 398px;
+  width: 260px;
+  background-color: silver;
+}
+.carousel-right-top{
+  height: 178px;
+  width: 260px;
+  background-color: tan;
+}
+.carousel-right-bottom{
+  height: 219px;
+  width: 260px;
+  background-color: violet;
+}
+/* 4. 优惠专区 down */
+.down {
+  height: 190px;
+  width: 100%;
+  background-color: cadetblue;
+}
+/* 1-5F */
+.discount,
+.business,
+.phone,
+.capacity,
+.amusement {
+  height: 535px;
+  width: 100%;
+}
+
+/* 5. 1F  优惠 discount */
+.discount {
+  background-color: coral;
+}
+
+/* 6. 2F 业务推荐 business */
+.business {
+  background-color: cornflowerblue;
+}
+
+/* 7. 3F 手机专区 phone */
+.phone {
+  background-color: darkgoldenrod;
+}
+
+/*8 4F.智能硬件 capacity  */
+.capacity {
+  background-color: darkgreen;
+}
+
+/* 9.5F 咪咕娱乐amusement */
+.amusement {
+  background-color: darkseagreen;
+}
+
+/* 10.猜你喜欢 like  */
+.like {
+  height: 410px;
+  width: 100%;
+  background-color: dimgray;
+}
+
+/* 11.特色专区 feature  */
+.feature {
+  height: 212px;
+  width: 100%;
+  background-color: rosybrown;
+}
+
+/* 12.公告 announce */
+.annouce {
+  height: 50px;
+  width: 100%;
+  background-color: sienna;
+}
+
+/* 13.国资动态 state(国家) */
+.state {
+  height: 104px;
+  width: 100%;
+  background-color: teal;
+}
+
+/* 14.服务serve  */
+.serve {
+  height: 260px;
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+/* 15.底部 footer */
+.footer {
+  height: 198px;
+  width: 100%;
+  background-color: thistle;
+}

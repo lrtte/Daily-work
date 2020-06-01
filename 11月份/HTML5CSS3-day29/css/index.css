@@ -1,0 +1,61 @@
+html{
+  margin-bottom: 500px;
+
+}
+.topnav{
+  height: 30px;
+  width: 100%;
+  background-color: #f5f5f5;
+  line-height: 30px;
+}
+.topnav-left{
+  float: left;
+
+}
+.topnav-left span{
+margin-right :28px ;
+color: #808080;
+}
+.topnav-left a{
+  color: #e40077;
+}
+.topnav-right{
+  float: right;
+  
+}
+.topnav-right a{
+  margin-left: 28px;
+  color: #808080;
+  
+}
+.topnav-right a span{
+  color: #e40077;
+}
+
+/*  2.搜索栏 */
+.search{
+height: 135px;
+width: 100%;
+background-color: aquamarine;
+}
+.search-top{
+  height: 88px;
+  width: 100%;
+  background-color: cadetblue;
+}
+.search-top-left{
+  float: left;
+}
+.search-top-left img{
+  float: left;
+  margin-top: 18px;
+  margin-right: 14px;
+}
+.search-top-left span{
+  float: left;
+  margin-top: 42px;
+  font-size: 15px;
+}
+.search-top-right{
+  float: right;
+}

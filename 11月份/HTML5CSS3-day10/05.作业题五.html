@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./lib/reset.css">
+</head>
+<style>
+  .bigbox {
+    height: 598px;
+    width: 746px;
+    background-color: darkgreen;
+    margin: 30px auto;
+  }
+
+  .bigbox-head {
+    height: 76px;
+    width: 100%;
+    background-color: #B35058;
+  }
+
+  /* 前端与移动开发 */
+  .bigbox-head-left {
+    float: left;
+  }
+
+  .bigbox-head-left div {
+
+    height: 100%;
+    line-height: 76px;
+    margin-left: 25px;
+    font-size: 23px;
+    color: #FFFFFF;
+
+  }
+
+  /*进 学 申  */
+  .bigbox-head-right {
+    float: right;
+    margin-top: 20px;
+
+  }
+
+  .bigbox-head-right a {
+    float: left;
+    height: 40px;
+    width: 99px;
+    border: 1px solid #C27379;
+    font-size: 17px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 14px;
+    color: #F5FFFF;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  /* 中间部分 */
+  .bigbox-center {
+    height: 370px;
+    width: 100%;
+    background-color: salmon;
+    margin: 28px 0px;
+  }
+
+  /* 中间左边 */
+  .bigbox-center-left {
+    height: 370px;
+    width: 457px;
+    background-color: slateblue;
+  }
+
+  /* 中间左边的上面部分 （图片 大前端）*/
+  .bigbox-center-left-top {
+    height: 118px;
+    width: 408px;
+    margin: 0 auto;
+    background-color: seagreen;
+    border-bottom: 1px solid #E6E6E6;
+
+  }
+
+  .bigbox-center-left-top-left {
+    float: left;
+
+  }
+
+  .bigbox-center-left-top-left img {
+    margin-left: 44px;
+    margin-top: 16px;
+  }
+
+  .bigbox-center-left-top-right {
+
+    float: left;
+    margin-top: 40px;
+  }
+
+  .bigbox-center-left-top-right div {
+    margin-left: 15px;
+    font-size: 19px;
+    color: #B35058;
+
+  }
+
+  /* 中间左边下面部分 四个方面 */
+  .bigbox-center-left-bottom {
+    height: 225px;
+    width: 408px;
+    background-color: springgreen;
+    margin: 27px auto;
+  }
+  
+  .bigbox-center-left-bottom-left {
+    float: left;
+    height: 225px;
+    width: 203px;
+    background-color: violet;
+    border-right: 1px solid #E6E6E6;
+
+    /* margin-left: 28px; */
+  }
+  /* 课程大纲 */
+.bigbox-center-left-bottom-left-top {
+  float: left;
+  height: 112px;
+  width:178px;
+  background-color: tan;
+  margin-left: 13px;
+  border-bottom: 1px solid #E6E6E6
+}
+  .bigbox-center-left-bottom-left-top div,
+  img {
+    float: left;
+  }
+
+  .bigbox-center-left-bottom-left-top img {
+    margin-top: 30px;
+    margin-left: 12px;
+  }
+
+  .bigbox-center-left-bottom-left-top div {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 12px;
+  }
+  /* 师资力量 */
+  .bigbox-center-left-bottom-left-bottom{
+    float: left;
+  height: 112px;
+  width:178px;
+  background-color:tomato;
+  margin-left: 13px;
+  }
+  .bigbox-center-left-bottom-left-bottom div,
+  img {
+    float: left;
+  }
+
+  .bigbox-center-left-bottom-left-bottom img {
+    margin-top: 30px;
+    margin-left: 12px;
+  }
+
+  .bigbox-center-left-bottom-left-bottom div {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 12px;
+  }
+  /* 就业场景 */
+  
+  .bigbox-center-left-bottom-right-top{
+    float: left;
+  height: 112px;
+  width:178px;
+  background-color:tomato;
+  margin-left: 13px;
+  border-bottom: 1px solid #E6E6E6
+  }
+  .bigbox-center-left-bottom-right-top div,
+  img {
+    float: left;
+  }
+
+  .bigbox-center-left-bottom-right-top img {
+    margin-top: 30px;
+    margin-left: 12px;
+  }
+
+  .bigbox-center-left-bottom-right-top div {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 12px;
+  }
+
+
+  .bigbox-center-left-bottom-right-top div,
+  img {
+    float: left;
+  }
+
+  .bigbox-center-left-bottom-right-top img {
+    margin-top: 28px;
+    margin-left: 12px;
+  }
+
+  .bigbox-center-left-bottom-right-top div {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 12px;
+  }
+  /* 就业前景 */
+  .bigbox-center-left-bottom-right-bottom{
+    float: left;
+  height: 112px;
+  width:178px;
+  background-color: tan;
+  margin-left: 13px;
+  }
+  .bigbox-center-left-bottom-right-bottom div,
+  img {
+    float: left;
+  }
+
+  .bigbox-center-left-bottom-right-bottom img {
+    margin-top: 30px;
+    margin-left: 12px;
+  }
+
+  .bigbox-center-left-bottom-right-bottom div {
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 12px;
+  }
+
+</style>
+
+<body>
+  <!-- 1.大盒子 -->
+  <div class="bigbox">
+    <!-- 1.1大盒子的头部 -->
+    <div class="bigbox-head">
+      <!-- 1.1.1大盒子的头部的左边 -->
+      <div class="bigbox-head-left">
+        <div>
+          前端与移动开发
+        </div>
+      </div>
+      <!-- 1.1.2大盒子的头部的右边 -->
+      <div class="bigbox-head-right">
+        <!-- 1.1.2.1大盒子头部的右边的三个按钮 -->
+
+        <a href="#">进入学院</a>
+        <a href="#">学习社区</a>
+        <a href="#">申请试听</a>
+      </div>
+    </div>
+
+    <!-- 1.2大盒子的中间 -->
+    <div class="bigbox-center">
+      <!-- 1.2.1大盒子中间的左边 -->
+      <div class="bigbox-center-left">
+        <!-- 1.2.1.1大盒子中间的左边的上边 -->
+        <div class="bigbox-center-left-top">
+          <!-- 1.2.1.1.1大盒子中间的左边的上边的左边 (web图片)-->
+          <div class="bigbox-center-left-top-left">
+            <img src="./images/web_icon.jpg" alt="">
+          </div>
+          <!-- 1.2.1.1.2大盒子中间的左边的上边的右边 -->
+          <div class="bigbox-center-left-top-right">
+            <div>大前端改变世界</div>
+            <div>我们改变前端</div>
+          </div>
+
+        </div>
+        <!-- 1.2.1.2大盒子中间的左边的下边 (四个框) -->
+        <div class="bigbox-center-left-bottom">
+          <!-- 1.2.1.2.1大盒子中间的左边的下边的左边 -->
+          <div class="bigbox-center-left-bottom-left">
+            <!-- 1.2.1.2.1.1大盒子中间的左边的下边的左边的上边 (图片 课程大纲) -->
+            <div class="bigbox-center-left-bottom-left-top">
+              <img src="./images/icon2.png" alt="">
+              <div>课程大纲</div>
+            </div>
+            <!-- 1.2.1.2.1.1大盒子中间的左边的下边的左边的下边 (图片 师资力量) -->
+            <div class="bigbox-center-left-bottom-left-bottom">
+              <img src="./images/icon1.png" alt="">
+              <div>师资力量</div>
+            </div>
+          </div>
+          <!-- 1.2.1.2.2大盒子中间的左边的下边的右边 -->
+          <div class="bigbox-center-left-bottom-right">
+            <!-- 1.2.1.2.2.1大盒子中间的左边的下边的右边的上边 (图片 就业前景)-->
+            <div class="bigbox-center-left-bottom-right-top">
+                <img src="./images/icon3.png" alt="">
+                <div>就业前景</div>
+            </div>
+            <!-- 1.2.1.2.2.2大盒子中间的左边的下边的右边的下边 （免费下载）-->
+            <div class="bigbox-center-left-bottom-right-bottom">
+                <img src="./images/icon3.png" alt="">
+                <div>就业前景</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 1.2.1.2.1大盒子中间的左边的下边的四个盒子 -->
+      <!-- 1.2.2大盒子中间的右边 -->
+      <!-- 1.2.2.1大盒子中间的右边的上边 -->
+      <!-- 1.2.2.2大盒子中间的右边的中间 -->
+      <!-- 1.2.2.2.1大盒子中间的右边的中间的四个链接 -->
+      <!-- 1.2.2.3大盒子中间的右边的下边 -->
+      <!-- 1.2.2.3.1大盒子中间的右边的中间的四个链接 -->
+    </div>
+
+    <!-- 1.3大盒子的底部 -->
+  </div>
+
+</body>
+
+</html>

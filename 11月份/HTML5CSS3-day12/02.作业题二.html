@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .father {
+      position: relative;
+
+      height: 430px;
+      width: 292px;
+      border-top: 1px solid #2196F3;
+      margin: 100px 500px;
+      text-align: center;
+    }
+
+    .father>span {
+      display: block;
+      font-size: 18px;
+    }
+
+    .father p:nth-child(3) {
+
+      color: #B4B4B4;
+    }
+
+    .father p:nth-child(4) {
+     font-size: 18px;
+     color: #FA6910;
+     
+    }
+    .father p:nth-child(4) span{
+     color:#B1B1B1 ;
+     text-decoration: line-through;
+     
+    }
+    .son {
+      position: absolute;
+      top: 0;
+      left: 106px;
+      width: 82px;
+      height: 26px;
+      background-color: #E13834;
+      color: #FAFAFA;
+      font-size: 14px;
+      line-height: 26px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <div><img src="./images/2.jpg" alt=""></div>
+
+    <span>MIJOY 胶带座套装 白色</span>
+    <p>结实耐用 轻松便捷</p>
+    <p>9.95元<span> 19.9元</span></p>
+    <div class="son">5折</div>
+
+  </div>
+
+</body>
+
+</html>

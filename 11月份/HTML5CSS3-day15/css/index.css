@@ -1,0 +1,254 @@
+body {
+  background-color: #2b2b2b;
+}
+.topnav {
+  height: 28px;
+  width: 100%;
+  background-color: #2b2b2b;
+  border-bottom: 1px solid #222222;
+}
+.topnav-area {
+  height: 29px;
+}
+.topnav-left {
+  float: left;
+}
+.topnav-left a {
+  float: left;
+  height: 28px;
+  color: #ccc;
+  line-height: 28px;
+  margin: 0 10px;
+}
+.topnav-right li b{
+  margin-top: 0px;
+}
+.topnav-left a:hover {
+  color: #ff9d00;
+}
+.topnav-right {
+  float: right;
+  height: 28px;
+}
+.topnav-right li {
+  float: left;
+}
+.topnav-right a,
+.topnav-right span {
+  position: relative;
+  color: #ccc;
+  line-height: 28px;
+  margin: 0px 10px;
+  z-index: 2;
+}
+.topnav-right a:hover {
+  color: #ff9d00;
+}
+.topnav-right li:nth-child(3) span {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  height: 28px;
+  width: 84px;
+}
+
+.topnav-right li:nth-child(3) ul {
+  position: absolute;
+  top: 21px;
+  left: 0px;
+  width: 84px;
+  z-index: 2;
+  display: none;
+  
+}
+.topnav-right li:nth-child(3):hover ul{
+  display: block;
+}
+.topnav-right li:nth-child(3) ul li {
+  float: none;
+  text-align: center;
+  color: #666;
+
+}
+.topnav-right li:nth-child(3) ul li:hover{
+  background-color: #fdd000;
+  color: #fff;
+}
+.topnav-right li:nth-child(3) span img {
+  position: absolute;
+  left: 74px;
+  top: 12px;
+}
+.topnav-right li:nth-child(3):hover span {
+  background-color: #fff;
+  color: #666;
+
+}
+.topnav-right .youxiake {
+  /* padding-left: 12px; */
+  /* display: none; */
+  height: 140px;
+
+  background-color: #fff;
+}
+.topnav-right  .youxiake {
+  display: block;
+  z-index: 2;
+}
+
+.youxiake ul {
+  text-align: center;
+}
+.topnav-right i {
+  font-size: 22px;
+}
+.topnav-right .app {
+  display: block;
+}
+
+.topnav-right .app span {
+  float: right;
+  margin: 0;
+  line-height: 28px;
+}
+.topnav-right .app:hover span {
+  color: #ff9d00;
+}
+.app .iconfont {
+  color: rgb(252, 206, 0);
+}
+.topnav-right a > img {
+  display: none;
+  position: absolute;
+  top: 11px;
+  left: -63px;
+}
+.topnav-right a:hover img {
+  display: block;
+}
+.topnav-right li:last-child img,
+.app > span img {
+  height: 130px;
+  width: 130px;
+}
+.app > span img {
+  position: absolute;
+  display: none;
+  top: 30px;
+  left: -80px;
+}
+.topnav-right li:last-child .wechat {
+  position: absolute;
+  left: -70px;
+  top: 22px;
+  display: none;
+  width: 130px;
+  height: 130px;
+  padding: 10px;
+  background-color: #fff;
+}
+.topnav-right li:last-child a:hover .wechat {
+  display: block;
+}
+.topnav-right .wechat::after {
+  content: "";
+  position: absolute;
+  top: -18px;
+  right: 50%;
+  margin-right: -8px;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #fff;
+  border-left: 8px solid transparent;
+}
+/* 搜索区域 */
+.search {
+  width: 100%;
+  height: 122px;
+  background-color: #333;
+}
+
+.search-logo {
+  float: left;
+  line-height: 150px;
+}
+.search-city {
+  position: relative;
+  float: left;
+  font-size: 16px;
+  margin-left: 122px;
+  line-height: 122px;
+}
+.search-city span a{
+  color: #fdd000;
+  
+}
+
+.search-city i {
+  position: absolute;
+  left: 48px;
+  top: -2px;
+}
+.search-area-box {
+  float: left;
+  /* position: relative; */
+  /* top: -23px; */
+  /* left: 0px; */
+  height: 36px;
+  width: 560px;
+  border: 2px solid #fdd000;
+  margin-top: 40px;
+  margin-left: 34px;
+}
+.search-area-box > span {
+  position: relative;
+  float: left;
+  top: -43px;
+  left: 8px;
+  color: #afaaaa;
+  font-size: 14px;
+  line-height: 122px;
+}
+.search-area-box span img {
+  position: absolute;
+  top: 60px;
+  left: 31px;
+}
+.search-area-box input {
+  height: 25px;
+  position: absolute;
+  left: 28px;
+  top: -30px;
+  background-color: transparent;
+  border: none;
+  margin-top: 36px;
+  margin-left: 32px;
+  color: #fff;
+}
+.sousuo {
+  height: 36px;
+  background-color: transparent;
+  border: none;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 700;
+}
+.suosuo-color {
+  float: right;
+  height: 36px;
+  width: 130px;
+  text-align: center;
+  background-color: rgb(252, 206, 0);
+}
+.search-area-hotline {
+  top: 0px;
+  float: right;
+  line-height: 140px;
+}
+.search-serice img {
+  position: relative;
+  right: -787px;
+  top: -31px;
+}

@@ -1,0 +1,131 @@
+/* 顶部导航样式 */
+.topnav {
+  height: 40px;
+  background-color: #333;
+}
+
+/* 顶部导航左边 */
+.topnav-left {
+  float: left;
+}
+/* 顶部导航左边的链接 */
+.topnav-left a {
+  float: left;
+  color: #b0b0b0;
+  line-height: 40px;
+}
+.topnav-left a:hover {
+  color: #fff;
+}
+/* 顶部导航左边的竖线 */
+.topnav-left i {
+  float: left;
+  color: #423c37;
+  margin: 0 8px;
+  line-height: 40px;
+}
+
+/* 顶部导航右边 */
+.topnav-right {
+  float: right;
+}
+/* 顶部导航右边的链接 */
+.topnav-right a {
+  float: left;
+  color: #b0b0b0;
+  line-height: 40px;
+}
+.topnav-right a:hover {
+  color: #fff;
+}
+/* 顶部导航右边的竖线 */
+.topnav-right i {
+  float: left;
+  color: #423c37;
+  line-height: 40px;
+  margin: 0 8px;
+}
+/* 顶部导航右边的购物车 */
+.topnav-right .cart {
+  height: 40px;
+  width: 120px;
+  background-color: #424242;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 26px;
+}
+.topnav-right .cart:hover {
+  background-color: #fff;
+  color: #ff6700;
+}
+/* 搜索导航 */
+.searchnav {
+  height: 100px;
+/* background-color: sandybrown; */
+  /* overflow: hidden; */
+  border: 1px solid transparent;
+}
+.searchnav-logo {
+  float: left;
+  height: 55px;
+  width: 55px;
+  background-color: #ff6700;
+  /* line-height: 55px; */
+  margin-top: calc((100px - 50px) / 2);
+  margin-right: 170px;
+}
+.searchnav-logo img {
+  margin: 3px;
+}
+.searchnav-table {
+  float: left;
+}
+.searchnav-table a {
+  float: left;
+  margin: 10px;
+  font-size: 16px;
+  color: #333333;
+  line-height: 80px;
+}
+.searchnav-search{
+  position: relative;
+  float: right;
+  height: 50px;
+  width: 296px;
+  border: 1px solid #e0e0e0;
+  padding-left: 60px;
+  box-sizing: border-box;
+  margin-top: calc((100px - 50px) / 2);
+  line-height: 50px;
+}
+
+.searchnav-search-button{
+  float: right;
+  height: 50px;
+  width: 50px;
+  /* background-color: seagreen; */
+  border-left: 1px solid #e0e0e0;
+  padding: 4px 15px;
+  box-sizing: border-box;
+}
+.searchnav-search-button button{
+
+  border: none;
+  background-color: transparent;
+}
+.searchnav-search input{
+border: none;
+    width: 174px;
+}
+.searchnav-search-hotkeys{
+  position: absolute;
+  top: 0px;
+  left: 64px;
+}
+.searchnav-search-hotkeys span{
+  margin-right: 8px;
+  background-color: #eeeeee;
+  color: #86838e;
+  padding: 4px;
+  box-sizing: border-box;
+}

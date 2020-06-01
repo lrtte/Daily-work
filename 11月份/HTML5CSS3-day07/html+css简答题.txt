@@ -1,0 +1,33 @@
+﻿1.行内元素和块级元素的区别是什么？怎么将行内元素转为块级元素？
+行内元素不能直接写宽高 块级元素可以
+块级元素不能一行显示多个 行内元素可以
+display:inline
+2.行内元素有哪些？块级元素有哪些？行内块元素有哪些？
+行内元素 span a strong i small b
+块级元素 p div ol ul li  h1-h6 table
+行内块元素  img input td
+3.块元素有什么特点？行内元素有什么特点？
+块元素 独占一行 可以直接设置宽高 宽度是父级宽度的百分之百
+行内元素 一行可以写多个 不能直接设置宽高 默认宽度是它本身内容的宽度 行内元素只能容纳文本或其它行内元素
+4.css的复合选择器有哪些？举列子说明
+伪类选择器 a:hover{样式声明}
+并集选择器 div,span{样式声明}
+子选择器 div>span{样式声明}
+后代选择器 div span{样式声明}
+5.背景的属性有哪些？分别是什么作用？
+背景颜色   background-color   
+transparent透明  
+rgba(红色,绿色,蓝色,透明度(0为完全透明 1为完全不透明))
+
+背景图片background-image
+ url() 链接
+
+平铺  background-repeat: 
+  no-repeat  不平铺
+  repeat   平铺
+  
+ 图片位置 background-position 
+  left  左
+  top  上
+  bottom  下
+  right 右

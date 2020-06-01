@@ -1,0 +1,558 @@
+/* 1.顶部导航 */
+.topnav {
+	width: 100%;
+  height: 44px;
+  background-image: url(../img/back.png);
+  
+}
+.topnav span{
+  color: #e2ebf5;
+}
+
+.topnav-left{
+  float: left;
+  height: 44px;
+  width: 320px;
+  /* background-color: teal; */
+}
+.topnav-left span{
+  float: left;
+  margin-top: 16px;
+}
+.topnav-left span:first-child{ 
+  margin-right: 30px;
+}
+.topnav-left span:nth-child(3){
+  margin-left: 18px;
+}
+
+.topnav-left .topnav-left-div1{
+  float: left;
+  height: 100%;
+  width: 69px;
+  background-image: url(../img/图层\ 350.png);
+
+}
+.topnav-left .topnav-left-div2{
+  float: left;
+  margin-left: -1px;
+  height: 100%;
+  width: 70px;
+  background-image: url(../img/图层\ 351.png);
+
+}
+.topnav-left div a{
+  display: inline-block;
+  color: #e2ebf5;
+  margin-top: 16px;
+margin-left: 24px;
+}
+.topnav-right{
+  float: right;
+  height: 44px;
+  width: 460px;
+  /* background-color: teal; */
+  background-image: url(../img/_\ 副本\ 2.png);
+  background-repeat: no-repeat;
+}
+
+.topnav-right span,
+.topnav-right div{
+  float: left;
+}
+.topnav-right span{
+  width: 68px;
+  height: 100%;
+  text-align: center;
+  margin-top: 16px;
+}
+.topnav-right div{
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  margin-top: 12px;
+}
+
+
+
+
+/* 2.搜索栏 */
+
+.search{
+  height: 164px;
+  width: 100%;
+  /* background-color: wheat; */
+  border-bottom: 4px solid #0054a7;
+}
+
+.search-top{
+height: 100px;
+width: 100%;
+/* background-color: red; */
+}
+.search-top-left,
+.search-top-center{
+  float: left;
+}
+.search-top-left img{
+  margin-top: 31px;
+}
+.search-top-center{
+  height: 100%;
+  width:524px ;
+  /* background-color: yellow; */
+  margin-left: 155px;
+  
+}
+.search-top-center-top{
+  float: left;
+  margin-top: 35px;
+}
+.search-top-center-top>div{
+  position: relative;
+  float: left;
+  height: 38px;
+  width: 484px;
+  border: 3px solid #0054a7;
+  box-sizing: border-box;
+}
+.search-top-center-top .search-top-center-top-button-word::before{
+  content: "请输入关键字";
+  position: absolute;
+  top: 10px;
+  left: 94px;
+  color: #c2c2c2;
+}
+
+.search-top-center-top div span{
+  float: left;
+  /* text-align: center; */
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.search-top-center-top .search-top-center-top-kecheng{
+  /* position: relative;  */
+  float: left;
+  height: 32px;
+  width: 80px;
+  /* border: 1px solid red; */
+  border-right: 1px solid #f1f1f1;
+  background-color: #f6f6f6;
+}
+.search-top-center-top>span{
+  float: left;
+  font-size: 14px;
+  margin-top: 4px;
+  margin-left: 6px;
+}
+.search-top-center-top div button{
+  float: right;
+  margin-right: 27px;
+  /* text-align: center; */
+  margin-top: 4px;
+  border: none;
+  background-color: transparent;
+  color: #ebf1f8;
+  font-size: 15px;
+}
+.search-top-center-top div .search-top-center-top-button{
+  float: right;
+  height: 32px;
+  width: 89px;
+  background-color:#0054a7 ;
+}
+.search-top-center-bottom span{
+  float: left;
+  margin-right: 13px;
+  margin-top: 6px;
+  color: #a7a7a7;
+}
+
+
+.search-top-right{
+  float: right;
+  height: 100px;
+  width: 230px;
+  /* background-color: teal; */
+}
+.search-top-right img{
+  float: left;
+  margin-top: 43px;
+}
+
+
+.search-bottom{
+  height: 64px;
+  width: 100%;
+  /* background-color: turquoise; */
+}
+.search-bottom .search-bottom-left{
+  float: left;
+  height: 51px;
+  width: 150px;
+  background-color: #0054a7;
+  margin-bottom: -13px;
+  margin-top: 13px;
+  font-size: 15px;
+  color: #e5edf6;
+  padding-left: 26px;
+  box-sizing: border-box;
+  padding-top: 16px;
+}
+.search-bottom-center{
+  float: left;
+}
+.search-bottom .search-bottom-center{
+  height: 100%;
+  width: 844px;
+  /* background-color: red; */
+}
+.search-bottom .search-bottom-center li{
+  float: left;
+  width: 91px;
+  height: 100%;
+  text-align: center;
+}
+.search-bottom-center li img{ 
+  margin-top: 4px;
+}
+
+.search-bottom-center li p{
+    margin-top: 16px;
+    font-size: 15px;
+}
+
+
+
+
+/* 3.轮播consel */
+.consel{
+  height: 474px;
+  width: 100%;
+  background-color: tomato;
+}
+
+
+
+
+/* 4.活动active */
+.active{
+  height: 163px;
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+
+
+
+
+/* 5.广告 */
+.ad{
+  height: 70px;
+  width: 100%;
+  background-color: teal;
+}
+
+
+
+
+
+
+
+
+
+/* 6.考研 */
+.exam {
+  height: 560px;
+  width: 100%;
+  /* background-color: gray; */
+}
+.exam-title {
+  height: 86px;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed;
+  box-sizing: border-box;
+}
+.exam-title-left {
+  float: left;
+  width: 473px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.exam-title-left img {
+  width: 100%;
+  margin-top: 33px;
+  margin-bottom: 9px;
+}
+.exam-title-left span,
+.exam-title-left s {
+  float: left;
+}
+
+.exam-title-left s,
+.exam-title-right s {
+  margin: 0 14px;
+}
+.exam-title-left-span {
+  margin-left: 321px;
+}
+
+.exam-title-center {
+  float: left;
+}
+.exam-title-center img {
+  height: 100%;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.exam-title-right {
+  float: right;
+  width: 473px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.exam-title-right img {
+  width: 100%;
+  margin-top: 33px;
+  margin-bottom: 9px;
+}
+
+/* 1.2考研内容 */
+.exam-content {
+  height: 434px;
+  width: 100%;
+  /* background-color: saddlebrown; */
+  border-bottom: 1px solid #f2f2f2;
+}
+/* 1.2.1考研内容第一部分 */
+.exam-content-one {
+  float: left;
+  height: 100%;
+  width: 398px;
+  /* background-color: seagreen; */
+  border-right: 1px solid #f2f2f2;
+}
+.exam-content-one-title{
+  height: 52px;
+  width: 100%;
+  /* background-color: hotpink; */
+}
+.exam-content-one-title span {
+  line-height: 52px;
+  font-weight: 700;
+}
+.exam-content-one-center {
+     /* float: left; */
+     position: relative;
+     width: 378px;
+     height: 224px;
+     /* background-color: indigo; */
+     border-bottom: 1px solid #f2f2f2;
+}
+.exam-content-one-center h2,
+.exam-content-two-center h2 {
+  margin-top: 11px;
+  font-weight: normal;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+.exam-content-one-center h2 > s, 
+.exam-content-two-center h2 > s {
+  font-weight: 700;
+}
+.exam-content-one-center :nth-child(3) {
+  font-size: 18px;
+  color: #e95052;
+}
+.exam-content-one-center :nth-child(4),
+.exam-content-two-center :nth-child(4){
+  color: #cdcdcd;
+}
+.exam-content-one-center :nth-child(5),
+.exam-content-two-center :nth-child(5){
+  margin-left: 22px;
+  color: #cdcdcd;
+}
+.exam-content-one-center :nth-child(5) s,
+.exam-content-two-center :nth-child(5) s {
+  color: #4d4d4d;
+}
+.mianfei {
+  position: absolute;
+  bottom: 16px;
+  right: 0px;
+}
+
+.exam-content-one-bottom {
+  height: 155px;
+  width: 378px;
+  /* background-color: aquamarine; */
+}
+.exam-content-one-bottom li,
+ .exam-content-four-bottom li{
+  list-style: disc;
+  height: 26px;
+  margin-left: 14px;
+  color: #acacac;
+}
+.exam-content-one-bottom li span{
+  color: #646464;
+}
+.exam-content-one-bottom ul{
+border: 1px solid transparent;
+}
+.exam-content-one-bottom ul li:first-child,
+.exam-content-four-bottom ul li:first-child{
+  margin-top: 14px;
+ 
+}
+
+.exam-content-one-bottom li s{
+float: right;
+}
+
+
+/*  1.2.2考研内容第二部分 */
+.exam-content-two {
+  float: left;
+  height: 100%;
+  width: 318px;
+  /* background-color: tan; */
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #f2f2f2;
+}
+.exam-content-two-center :nth-child(3) {
+  font-size: 18px;
+  font-weight: 600;
+  color: #a3a3a3;
+}
+.exam-content-two-center{
+  position: relative;
+  height: 225px;
+  width: 278px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.cishu{
+  position: absolute;
+  bottom: 16px;
+  right: 22px;
+}
+.exam-content-two .exam-content-one-bottom ul{
+  width: 276px;
+}
+.exam-content-two .exam-content-one-bottom li{
+  width: 100%;
+}
+/* 1.2.3考研内容第三部分 */
+.exam-content-three {
+  float: left;
+  height: 100%;
+  width: 189px;
+  /* background-color: violet; */
+  border-right: 1px solid #f2f2f2;
+}
+.exam-content-three-title{
+  height: 52px;
+  width: 100%;
+font-weight: 700;
+line-height: 52px;
+padding-left: 20px;
+box-sizing: border-box;
+}
+.exam-content-three-content-left{
+  float: left;
+  width: 70px;
+  height: 100%;
+  padding-left: 20px;
+box-sizing: border-box;
+}
+.exam-content-three-content-left img{
+  margin-bottom: 5px;
+  
+  }
+.exam-content-three-content-left p{
+margin-bottom: 22px;
+margin-left: 10px;
+
+}
+.exam-content-three-content-center{
+  float: left;
+  margin-left: 8px;
+}
+.exam-content-three-content-right h2{
+font-weight: normal;
+color: #b2b2b2;
+  margin-bottom: 53px;
+}
+.exam-content-three-content-right p{
+  color: #6da5dc;
+}
+
+
+/* 1.2.4考研内容第四部分 */
+.exam-content-four {
+  float: left;
+  height: 100%;
+  width: 292px;
+  /* background-color: green; */
+  
+}
+.exam-content-four-title{
+  height: 52px;
+  width: 282px;
+  line-height: 52px;
+  margin: 0 auto;
+  border-bottom: 4px solid #f6f6f6;
+}
+.exam-content-four-title span{
+  float: left;
+  width: 70px;
+  text-align: center;
+}
+.exam-content-four-title span:first-child{
+  border-bottom: 4px solid #e7e7e7;
+  font-weight: 700;
+}
+
+/* 1.2.4.2考研内容第四部分 上边 */
+.exam-content-four-top,
+.exam-content-four-center{
+  height: 106px;
+  width: 282px;
+  /* background-color: aquamarine; */
+  margin: 0 auto;
+  border: 1px solid transparent;
+}
+.exam-content-four-top,
+.exam-content-four-center{
+  border-bottom: 1px solid #f8f8f8
+}
+.exam-content-four-top h3,
+.exam-content-four-center h3{
+  font-size: 20px;
+    font-weight: normal;
+    color: #787878;
+    margin-top: 18px;
+}
+.exam-content-four-top p,
+.exam-content-four-center p{
+ 
+    margin-top: 12px;
+}
+.exam-content-four-bottom li{
+  margin-left: 22px;
+}
+
+
+
+
+/* 7.底部footer  */
+.footer{
+  height: 584px;
+  width: 100%;
+  background-color: violet;
+}

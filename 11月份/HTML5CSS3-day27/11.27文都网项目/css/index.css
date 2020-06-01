@@ -1,0 +1,283 @@
+.exam {
+  height: 521px;
+  width: 100%;
+  /* background-color: gray; */
+}
+.exam-title {
+  height: 86px;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ededed;
+  box-sizing: border-box;
+}
+.exam-title-left {
+  float: left;
+  width: 473px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.exam-title-left img {
+  width: 100%;
+  margin-top: 33px;
+  margin-bottom: 9px;
+}
+.exam-title-left span,
+.exam-title-left s {
+  float: left;
+}
+
+.exam-title-left s,
+.exam-title-right s {
+  margin: 0 14px;
+}
+.exam-title-left-span {
+  margin-left: 321px;
+}
+
+.exam-title-center {
+  float: left;
+}
+.exam-title-center img {
+  height: 100%;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.exam-title-right {
+  float: right;
+  width: 473px;
+  height: 100%;
+  background-color: #ffffff;
+}
+.exam-title-right img {
+  width: 100%;
+  margin-top: 33px;
+  margin-bottom: 9px;
+}
+
+/* 1.2考研内容 */
+.exam-content {
+  height: 434px;
+  width: 100%;
+  /* background-color: saddlebrown; */
+  border-bottom: 1px solid #f2f2f2;
+}
+/* 1.2.1考研内容第一部分 */
+.exam-content-one {
+  float: left;
+  height: 100%;
+  width: 398px;
+  /* background-color: seagreen; */
+  border-right: 1px solid #f2f2f2;
+}
+.exam-content-one-title{
+  height: 52px;
+  width: 100%;
+  /* background-color: hotpink; */
+}
+.exam-content-one-title span {
+  line-height: 52px;
+  font-weight: 700;
+}
+.exam-content-one-center {
+     /* float: left; */
+     position: relative;
+     width: 378px;
+     height: 224px;
+     /* background-color: indigo; */
+     border-bottom: 1px solid #f2f2f2;
+}
+.exam-content-one-center h2,
+.exam-content-two-center h2 {
+  margin-top: 11px;
+  font-weight: normal;
+  margin-bottom: 14px;
+  font-size: 16px;
+}
+.exam-content-one-center h2 > s, 
+.exam-content-two-center h2 > s {
+  font-weight: 700;
+}
+.exam-content-one-center :nth-child(3) {
+  font-size: 18px;
+  color: #e95052;
+}
+.exam-content-one-center :nth-child(4),
+.exam-content-two-center :nth-child(4){
+  color: #cdcdcd;
+}
+.exam-content-one-center :nth-child(5),
+.exam-content-two-center :nth-child(5){
+  margin-left: 22px;
+  color: #cdcdcd;
+}
+.exam-content-one-center :nth-child(5) s,
+.exam-content-two-center :nth-child(5) s {
+  color: #4d4d4d;
+}
+.mianfei {
+  position: absolute;
+  bottom: 16px;
+  right: 0px;
+}
+
+.exam-content-one-bottom {
+  height: 155px;
+  width: 378px;
+  /* background-color: aquamarine; */
+}
+.exam-content-one-bottom li,
+ .exam-content-four-bottom li{
+  list-style: disc;
+  height: 26px;
+  margin-left: 14px;
+  color: #acacac;
+}
+.exam-content-one-bottom li span{
+  color: #646464;
+}
+.exam-content-one-bottom ul{
+border: 1px solid transparent;
+}
+.exam-content-one-bottom ul li:first-child,
+.exam-content-four-bottom ul li:first-child{
+  margin-top: 14px;
+ 
+}
+
+.exam-content-one-bottom li s{
+float: right;
+}
+
+
+/*  1.2.2考研内容第二部分 */
+.exam-content-two {
+  float: left;
+  height: 100%;
+  width: 318px;
+  /* background-color: tan; */
+  padding-left: 20px;
+  box-sizing: border-box;
+  border-right: 1px solid #f2f2f2;
+}
+.exam-content-two-center :nth-child(3) {
+  font-size: 18px;
+  font-weight: 600;
+  color: #a3a3a3;
+}
+.exam-content-two-center{
+  position: relative;
+  height: 225px;
+  width: 278px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.cishu{
+  position: absolute;
+  bottom: 16px;
+  right: 22px;
+}
+.exam-content-two .exam-content-one-bottom ul{
+  width: 276px;
+}
+.exam-content-two .exam-content-one-bottom li{
+  width: 100%;
+}
+/* 1.2.3考研内容第三部分 */
+.exam-content-three {
+  float: left;
+  height: 100%;
+  width: 189px;
+  /* background-color: violet; */
+  border-right: 1px solid #f2f2f2;
+}
+.exam-content-three-title{
+  height: 52px;
+  width: 100%;
+font-weight: 700;
+line-height: 52px;
+padding-left: 20px;
+box-sizing: border-box;
+}
+.exam-content-three-content-left{
+  float: left;
+  width: 70px;
+  height: 100%;
+  padding-left: 20px;
+box-sizing: border-box;
+}
+.exam-content-three-content-left img{
+  margin-bottom: 5px;
+  
+  }
+.exam-content-three-content-left p{
+margin-bottom: 22px;
+margin-left: 10px;
+
+}
+.exam-content-three-content-center{
+  float: left;
+  margin-left: 8px;
+}
+.exam-content-three-content-right h2{
+font-weight: normal;
+color: #b2b2b2;
+  margin-bottom: 53px;
+}
+.exam-content-three-content-right p{
+  color: #6da5dc;
+}
+
+
+/* 1.2.4考研内容第四部分 */
+.exam-content-four {
+  float: left;
+  height: 100%;
+  width: 292px;
+  /* background-color: green; */
+  
+}
+.exam-content-four-title{
+  height: 52px;
+  width: 282px;
+  line-height: 52px;
+  margin: 0 auto;
+  border-bottom: 4px solid #f6f6f6;
+}
+.exam-content-four-title span{
+  float: left;
+  width: 70px;
+  text-align: center;
+}
+.exam-content-four-title span:first-child{
+  border-bottom: 4px solid #e7e7e7;
+  font-weight: 700;
+}
+
+/* 1.2.4.2考研内容第四部分 上边 */
+.exam-content-four-top,
+.exam-content-four-center{
+  height: 106px;
+  width: 282px;
+  /* background-color: aquamarine; */
+  margin: 0 auto;
+  border: 1px solid transparent;
+}
+.exam-content-four-top,
+.exam-content-four-center{
+  border-bottom: 1px solid #f8f8f8
+}
+.exam-content-four-top h3,
+.exam-content-four-center h3{
+  font-size: 20px;
+    font-weight: normal;
+    color: #787878;
+    margin-top: 18px;
+}
+.exam-content-four-top p,
+.exam-content-four-center p{
+ 
+    margin-top: 12px;
+}
+.exam-content-four-bottom li{
+  margin-left: 22px;
+}
