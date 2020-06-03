@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 编写程序，用户录入任意的年份、月份、日期，
+
+        // 打印出该天是该年的第多少天。
+        
+        // 如果输入的月份大于了12月或者日期大于了31日，则输出0天
+        // 声明三个变量接收用户输入的年月日 声明一个变量days 表示天数
+        // 先令她为用户输入的天数 判断用户输入的月份是否小于二月 小于二月直接返回days
+        // 判断用户输入的月份是否大于12月 天数是否大于31天 大于直接令days = 0
+        // 声明一个数组存放每个月的天数 循环遍历数组  days += months[i]
+        // 判断是否时闰年 是 days++
+        function a() {
+            var year = +prompt('请输入年')
+            var month = +prompt('请输入月')
+            var day = +prompt('请输入日')
+            var days = day
+            if (day > 31||month > 12) {
+               return days = 0
+            }
+            if (month < 2) {
+                return days
+            }
+            var months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+            for (var i = 0; i < month - 1; i++) {
+                days += months[i]
+            }
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0 && month > 2) {
+                days++
+            }
+            return days
+        }
+        alert(a())
+
+
+
+    </script>
+</body>
+
+</html>

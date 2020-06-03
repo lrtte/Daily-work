@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 7.  求1到100之间的累加值，其中不包含个位数为9的数字（while实现）
+        var i = 1;
+        var sum = 0;
+        while (i <= 100) {
+            var ge = i % 10
+            if (ge == 9) {
+                i++
+                continue;    
+            }
+            sum += i
+            i++
+        }
+        console.log(sum)
+    </script>
+</body>
+
+</html>

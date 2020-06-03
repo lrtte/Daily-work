@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var users = [
+            //用户编号 用户名 密码 权限 
+            { userId: "u01", userName: "曹操", upwd: 123, uadministor: "管理员" },
+            { userId: "u02", userName: "许褚", upwd: 123, uadministor: "普通用" },
+            { userId: "u03", userName: "徐晃", upwd: 123, uadministor: "普通用户" },
+            { userId: "u04", userName: "张辽", upwd: 123, uadministor: "普通用户" }
+        ];
+        while (true) {
+
+            for (var i = 0; i < users.length; i++) {
+                var username = prompt('请您输入用户名')
+                var password = +prompt('请您输入密码')
+                if (username != users[i].userName || password != users[i].upwd) {
+                    alert('用户名密码错误，请重新输入')
+                    break;
+                }
+                break;
+            }
+            if (username == users[i].userName && password == users[i].upwd) {
+
+                var cheng = prompt(`程序主页：
+            尊敬的${users[i].uadministor} ${users[i].userName}  欢迎光临
+            1.查看所有用户列表
+            2.修改用户密码
+            3.退出程序`)
+            }
+            var choose = prompt('请选择数字，数字只能选择1或者2或者是3')
+            if (choose == 1) {
+                alert(`用户编号 用户名 密码 权限 
+            u01    曹操   123  管理员
+            u02    许褚   123  普通用户
+            u03   徐晃   123  普通用户
+            u04    张辽   123  普通用户 `)
+            }
+            if(choose==2){
+                var xiu=prompt('请您输入需要修改的用户编号')
+            }
+            if(choose==3){
+                alert('欢迎下次光临')
+            }
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

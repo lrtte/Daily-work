@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 1. 打印1-100中前三个是17的整数倍的数
+        //分析：循环1-100，找到前三个是17的整数倍的数 输出，break跳出循环
+        // 1.初始化表达式
+        var i = 1;
+        // 2.声明计数变量
+        var sum=0;
+        // 3.while循环
+        while (i <= 100) {
+            //判断能否被17整除
+            if (i % 17 == 0) {
+                //能就加一次
+                sum++
+                //判断是否等于4 如果是4 跳出循环
+                if(sum==4){
+                    break;
+                }
+                //输出i
+                console.log(i)
+            }
+        //4.步进
+            i++
+        }
+
+
+
+    </script>
+</body>
+
+</html>
