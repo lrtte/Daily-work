@@ -1,0 +1,61 @@
+    JavaScript的用途
+1.给网页增加动态效果
+2.对浏览器事件做出响应
+3.读写HTML元素
+4.在数据被提交到服务器之前验证数据
+5.基于Node.js技术进行服务器端编程(服务器开发 node.js可以做服务器开发)
+
+    JavaScript的组成
+ECMAScript、Dom、Bom
+
+    JavaScript的语言特点
+ JavaScript是一种轻量级的编程语言，可以嵌入到html页面中，由来浏览器来解释执行，用来实现浏览器和用户交互。
+ JavaScript是一种基于对象和事件驱动的客户端脚本语言，他可以在用户浏览器为网页添加一些动态效果，和用户交互，响应用户操作。
+ JavaScript可以用来帮助减轻服务器的压力，例如在客户端完成数据校验。
+
+    数据类型
+     JavaScript中有7种数据类型：数字（number）、字符串（string）、
+     布尔值（boolean）、undefined、null、对象（Object）、Symbol。
+     其中对象类型包括：数组（Array）、函数（Function）
+
+   数据类型之间的转换
+        其它数据转换为数字
+        Number();
+        a.如果转换的内容可以转成数字，那么就直接返回这个内容对应的数字。
+        b.如果不可以转换那么返回NaN.
+        c.如果在内容中出现小数，那么小数会保留。 
+        d.如果内容为空，那么转换成0;
+
+其它数据转换为数字
+        PareInt();
+        a.如果转换的内容可以转成数字，那么就直接返回这个内容对应的数字。 
+        b.如果不可以转换那么返回NaN. 
+        c.如果带有小数，那么会去掉小数，而不是四舍五入。 
+        d.如果第一个字符是数字，则继续解析直至字符串解析完毕或者遇到一个非数字 符号为止.
+        ParseFloat();
+       与parseInt一样，唯一区别是parseFloat可以保留小数
+
+ 其它数据转换为字符串
+       toString() : 
+        除了null undefined这两个类型不能调用 .toString() ，其他任何数据都可以调用 
+       String() : 
+       任何数据都可以调用此函数
+       隐式转换：
+      当两个操作数做”+”运算时，如果表达式中任意一边有字符串，”+”，为字符串连接符
+       var n = 200; 
+       n = n + ""; 
+       console.log(n, typeof n);    // “200”  string
+
+其它数据转换为布尔值
+      其它数据类型转换为boolean类型值为false,只有这几种情况:
+       0、NaN、“”、null、undefined、false
+       其它情况均为true
+       隐式转换：
+       在数据类型之前加“!!”即可
+       var n = -200; 
+       var b = !!n; 
+       console.log(b, typeof b);    //  true  boolean
+
+
+
+
