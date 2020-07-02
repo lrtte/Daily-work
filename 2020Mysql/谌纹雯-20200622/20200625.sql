@@ -59,59 +59,39 @@ insert into score values(NULL,901,'计算机',98);
     select * from student where year(now())-birth between 18 and 22;
     select * from student where year(now())-birth between 18 and 22;
 
-
 # 5.	查询student表中查询男、女各有多少人:
     select sex 性别, count(sex) 人数 from student group by sex;
-
 # 6.	查询student表中查询男、女各有多少人，并按照降序排列:
     select sex 性别, count(sex) 人数 from student group by sex order by count(sex) desc;
-
 # 7.	从student表中查询某系别总人数大于1的系名和数量:
     select department 系别 , count(department) 数量 from student group by department having count(department) > 1;
-
 # 8.	从score表中查询每个科目的最高分:
     select c_name 科目 , max(grade) 最高分 from score group by c_name;
-
 # 9.	计算每个学生的总成绩:
     select score.stu_id 学生学号 , student.name 学生姓名 , count(score.c_name) 学生科目数量, sum(score.grade) 学生总分 from student , score
     where student.id = score.stu_id group by stu_id;
-
 # 10.	计算每个考试科目的平均成绩:
     select c_name 科目 , avg(grade) 平均成绩 from score group by c_name;
-
 # 11.	将计算机考试成绩按从高到低排序:
     select stu_id 学生学号 , grade 考试成绩 from score where c_name = '计算机' group by  stu_id,grade order by grade desc;
-
 # 12.	查询score表中stu_id不是902、904、906,且成绩大于80的信息:
     select * from score where stu_id not in(902,904,906) and grade > 80 group by stu_id;
-
 # 13.	从student表中查询姓”王”，并且性别是男同学所在的系:
     select name 姓名 ,sex 性别 , department 院系信息 from student where name like '王%' and sex = '男' group by name;
-
 # 14.	从student表中查询姓”张”，并且是单名的同学的信息:
     select * from student where name like '张_';
-
 # 15.	要求将student表中的数据格式化输出，格式为：xx的家庭住址是xx (使用字符串的函数):
     select concat(name,'的家庭住址是',address) 住址 from student;
-
 # 16.	将student表中名字有“王”的替换为“小王”(使用字符串的函数):
     select replace(name,'王','小王') 姓名 from student;
-
 # 17.	要求查看student表中的姓名的字节数(使用字符串的函数):
     select length(name)  名字所占字节数, name 姓名 from student;
-
 # 18.	查询score表中的查询前3条的数据:
     select * from score limit 0,3;
-
 # 19.	查询score表中查询第4条到第6条的数据:
     select * from score limit 3,3;
-
 # 20.	计算student表中学生的年龄:
     select name 姓名 , year(now())-birth 年龄 from student;
-
-
-
-
 
     SELECT LOWER ('HELLO')AS'小写';
 
