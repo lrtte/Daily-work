@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>首页</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      margin-left: 300px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li,
+    div {
+      width: 250px;
+      padding: 10px 0;
+      margin-left: 10px;
+      border-bottom: 1px dashed #ccc;
+      height: 20px;
+    }
+
+    a {
+      float: right;
+    }
+
+    input {
+      padding: 5px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <input type="search" placeholder="输入搜索关键字" />
+  <input type="button" value="搜索" />
+  <div>
+    <a href="javascript:;">清空搜索记录</a>
+  </div>
+  <ul>
+    <!-- <li>没有搜索记录</li>
+    <li>
+      <span>手机</span>
+      <a href="javascript:;">删除</a>
+    </li>
+    </li> -->
+  </ul>
+  <script src="./lib/jquery-3.4.1.min.js"></script>
+  <script>
+    // 历史搜索记录
+    // 1.展示历史记录列表
+    // 2.点击搜索
+    // 3.删除一条数据
+    // 4.删除全部
+
+
+    // 2.点击搜索
+    // 2.1 获取搜索按钮 获取搜索框
+
+    // 2.2 给按钮添加点击事件
+    $('input[type="button"]').click(function () {
+      // 2.3 获取文本框中的内容
+      var keywords = $('input[type="search"]').val();
+      // 2.4 把文本框中的内容添加到历史记录中
+      if (keywords.trim() == '') {
+        alert("请输入搜索关键字");
+      } else {
+        setHistory(keywords);
+        showHistory();
+      }
+    })
+    // 1.展示历史记录列表
+    showHistory();
+    // 4.删除全部
+    $("div a").click(function () {
+      clearHistory();
+      showHistory();
+    })
+
+    // 3.删除一条数据
+    // 3.1 点击删除按钮的时候找到自己的兄弟元素中的文本
+    $("ul").on('click', "a", function () {
+      // 找到自己的兄弟元素中的文本
+      var text = $(this).siblings('span').html();
+      // console.log(text);
+      delHistory(text);
+      showHistory();
+    })
+    // 获取历史记录(把我们的关键字存在localStorage中)
+    function getHistory() {
+      // var result = 
+      // console.log(result);
+      return JSON.parse(window.localStorage.getItem('history') || '[]');
+    }
+    // 设置历史记录 value = 关键字
+    function setHistory(value) {
+      // 获取历史记录
+      var historyList = getHistory(); // history = ["手机","电脑"]
+      // console.log(historyList);
+      // 判断数组中是否已经有了我输入的关键字(1.把获取来的数据做一个遍历 2.如果遍历过程中有一个数组的值和我输入的值一样 找到那个值对应的索引 3.用数组的切割方法 把那个替换一次)
+      $.each(historyList, function (index, item) {
+        // console.log(index,item);
+        if (item == value) {
+          historyList.splice(index, 1);
+        }
+      })
+      // 把关键字追加到数组中
+      historyList.push(value);
+      // 把数组变成json存储到localStorage中
+      window.localStorage.setItem('history', JSON.stringify(historyList));
+    }
+    // 删除数据
+    function delHistory(value) {
+      // 3.2 获取历史记录
+      var historyList = getHistory();
+      // 3.3 对比我要删除的这个数据在不在数组中
+      $.each(historyList, function (index, item) {
+        // 3.4 如果在 就splice
+        if (item == value) {
+          historyList.splice(index, 1);
+        }
+        // 3.5 删除完 把新的数据重新添加到localStorage中就可以了
+        window.localStorage.setItem('history', JSON.stringify(historyList));
+      })
+    }
+
+    // 清空历史记录
+    // 禁止用localStorage.clear(); 
+
+    // 应该的思路是localStorage.removeItem()
+    function clearHistory() {
+      window.localStorage.removeItem('history');
+    }
+
+    // 展示历史记录列表
+    function showHistory() {
+      // 1. 获取历史记录数据
+      var historyList = getHistory();
+      // 2. 判断历史记录有没有数据
+      if (historyList.length == 0) {
+        // 3. 如果没有历史记录数据 打出一句话  <li>没有搜索记录</li>
+        $("ul").html("<li>没有搜索记录</li>");
+      } else {
+        // 4. 如果有历史记录 遍历 显示在浏览器上 
+        // 声明一个空字符串
+        var html = "";
+        // 遍历所有数据组成长字符串
+        $.each(historyList, function (index, item) {
+          html += '<li><span>' + item + '</span><a href="javascript:;">删除</a></li>'
+        })
+        // 把长字符串添加到ul中
+        $("ul").html(html);
+      }
+    }
+
+
+
+
+
+
+     $('input[type="button"]').click(function () {
+   // 获取文本框中的内容
+      var keywords = $('input[type="search"]').val();
+      if (keywords.trim() == '') {
+        alert("请输入搜索关键字");
+      } else {
+        setHistory(keywords);
+        showHistory();
+      }
+    })
+    // 展示历史记录列表
+    showHistory();
+    // 删除全部
+    $("div a").click(function () {
+      clearHistory();
+      showHistory();
+    })
+
+    //删除一条数据
+    $("ul").on('click', "a", function () {
+      // 找到自己的兄弟元素中的文本
+      var text = $(this).siblings('span').html();
+      // console.log(text);
+      delHistory(text);
+      showHistory();
+    })
+    function getHistory() {
+      return JSON.parse(window.localStorage.getItem('history') || '[]');
+    }
+    // 设置历史记录 value = 关键字
+    function setHistory(value) {
+      // 获取历史记录
+      var historyList = getHistory();
+      // 判断数组中是否已经有了我输入的关键字
+      $.each(historyList, function (index, item) {
+        // console.log(index,item);
+        if (item == value) {
+          historyList.splice(index, 1);
+        }
+      })
+      // 把关键字追加到数组中
+      historyList.push(value);
+      // 把数组变成json存储到localStorage中
+      window.localStorage.setItem('history', JSON.stringify(historyList));
+    }
+    // 删除数据
+    function delHistory(value) {
+      // 获取历史记录
+      var historyList = getHistory();
+      // 对比我要删除的这个数据在不在数组中
+      $.each(historyList, function (index, item) {
+        //  如果在 就splice
+        if (item == value) {
+          historyList.splice(index, 1);
+        }
+        //删除完 把新的数据重新添加到localStorage中就可以了
+        window.localStorage.setItem('history', JSON.stringify(historyList));
+      })
+    }
+    // 清空历史记
+    function clearHistory() {
+      window.localStorage.removeItem('history');
+    }
+    function showHistory() {
+      // 1. 获取历史记录数据
+      var historyList = getHistory();
+      // 2. 判断历史记录有没有数据
+      if (historyList.length == 0) {
+        $("ul").html("<li>没有搜索记录</li>");
+      } else {
+        // 声明一个空字符串
+        var html = "";
+        // 遍历所有数据组成长字符串
+        $.each(historyList, function (index, item) {
+          html += '<li><span>' + item + '</span><a href="javascript:;">删除</a></li>'
+        })
+        // 把长字符串添加到ul中
+        $("ul").html(html);
+      }
+    }
+
+
+
+    
+    $('input[type="button"]').click(function () {
+   // 获取文本框中的内容
+      var keywords = $('input[type="search"]').val();
+      if (keywords.trim() == '') {
+        alert("请输入搜索关键字");
+      } else {
+        setHistory(keywords);
+        showHistory();
+      }
+    })
+    // 展示历史记录列表
+    showHistory();
+    // 删除全部
+    $("div a").click(function () {
+      clearHistory();
+      showHistory();
+    })
+
+    //删除一条数据
+    $("ul").on('click', "a", function () {
+      // 找到自己的兄弟元素中的文本
+      var text = $(this).siblings('span').html();
+      // console.log(text);
+      delHistory(text);
+      showHistory();
+    })
+    function getHistory() {
+      return JSON.parse(window.localStorage.getItem('history') || '[]');
+    }
+    // 设置历史记录 value = 关键字
+    function setHistory(value) {
+      // 获取历史记录
+      var historyList = getHistory();
+      // 判断数组中是否已经有了我输入的关键字
+      $.each(historyList, function (index, item) {
+        // console.log(index,item);
+        if (item == value) {
+          historyList.splice(index, 1);
+        }
+      })
+      // 把关键字追加到数组中
+      historyList.push(value);
+      // 把数组变成json存储到localStorage中
+      window.localStorage.setItem('history', JSON.stringify(historyList));
+    }
+    // 删除数据
+    function delHistory(value) {
+      // 获取历史记录
+      var historyList = getHistory();
+      // 对比我要删除的这个数据在不在数组中
+      $.each(historyList, function (index, item) {
+        //  如果在 就splice
+        if (item == value) {
+          historyList.splice(index, 1);
+        }
+        //删除完 把新的数据重新添加到localStorage中就可以了
+        window.localStorage.setItem('history', JSON.stringify(historyList));
+      })
+    }
+    // 清空历史记
+    function clearHistory() {
+      window.localStorage.removeItem('history');
+    }
+    function showHistory() {
+      // 1. 获取历史记录数据
+      var historyList = getHistory();
+      // 2. 判断历史记录有没有数据
+      if (historyList.length == 0) {
+        $("ul").html("<li>没有搜索记录</li>");
+      } else {
+        // 声明一个空字符串
+        var html = "";
+        // 遍历所有数据组成长字符串
+        $.each(historyList, function (index, item) {
+          html += '<li><span>' + item + '</span><a href="javascript:;">删除</a></li>'
+        })
+        // 把长字符串添加到ul中
+        $("ul").html(html);
+      }
+    }
+  </script>
+</body>
+
+</html>
